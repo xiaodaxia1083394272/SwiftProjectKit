@@ -16,6 +16,8 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         let tableView = UITableView(frame: self.view.bounds)
         tableView.delegate = self as? UITableViewDelegate
         tableView.dataSource = self as? UITableViewDataSource
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
+        
         return tableView
         
     }()
@@ -32,14 +34,19 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         return 5
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //pss_注1，习惯在声明前加特定的类型
-         var cell = tableView .dequeueReusableCell(withIdentifier: "memeda")
-        if ((cell) != nil){
-            cell = UITableViewCell();
-        }
-        return cell!;
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //pss_注1.习惯写上对象的类型
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(UITableViewCell.self)", for: indexPath)
+        cell.selectionStyle = .none
+//        let child = children[indexPath.row]
+        cell.textLabel?.text = "memeda"
+        cell.textLabel?.textAlignment = .center
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 13)
+        return cell
     }
+    
+  
+    
 
     //
     deinit {
