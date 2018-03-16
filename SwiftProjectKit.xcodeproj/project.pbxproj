@@ -546,6 +546,7 @@
 		471E1E62205BCF5A000536BB /* qrcode_button_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_button_background@2x.png"; sourceTree = "<group>"; };
 		471E1E63205BCF5A000536BB /* qrcode_scanline_barcode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scanline_barcode@3x.png"; sourceTree = "<group>"; };
 		471E1E64205BCF5A000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_tabbar_icon_qrcode_highlighted@3x.png"; sourceTree = "<group>"; };
+		471E1F67205BD19A000536BB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		4790607D205983C0000E74A5 /* SwiftProjectKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProjectKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47906080205983C0000E74A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47906082205983C0000E74A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -949,6 +950,29 @@
 			path = QRCodeIcons;
 			sourceTree = "<group>";
 		};
+		471E1F66205BD17D000536BB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				471E1F67205BD19A000536BB /* Header.h */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		471E1F68205BD214000536BB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				471E1F69205BD214000536BB /* 其他小功能 */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		471E1F69205BD214000536BB /* 其他小功能 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "其他小功能";
+			sourceTree = "<group>";
+		};
 		47906074205983C0000E74A5 = {
 			isa = PBXGroup;
 			children = (
@@ -970,6 +994,8 @@
 		4790607F205983C0000E74A5 /* SwiftProjectKit */ = {
 			isa = PBXGroup;
 			children = (
+				471E1F68205BD214000536BB /* Class */,
+				471E1F66205BD17D000536BB /* Main */,
 				471E1D5D205BCF5A000536BB /* Resource */,
 				471E1D49205BC47F000536BB /* BaseViewController */,
 				471E1D45205BC47E000536BB /* Cell */,
