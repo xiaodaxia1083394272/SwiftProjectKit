@@ -12,13 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let r = arc4random()%255
+        let g = arc4random()%255
+        let b = arc4random()%255
+        self.view.backgroundColor = UIColor(displayP3Red: r.FloatValue/255, green: g.FloatValue/255, blue: b.FloatValue/255, alpha: 1)
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }
