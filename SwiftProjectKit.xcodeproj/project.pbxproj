@@ -979,7 +979,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
-				47B49A49206939ED000A36C3 /* XPage */,
+				47B49A49206939ED000A36C3 /* 分页控制器 */,
 			);
 			path = "其他小功能";
 			sourceTree = "<group>";
@@ -1024,7 +1024,7 @@
 			path = SwiftProjectKit;
 			sourceTree = "<group>";
 		};
-		47B49A49206939ED000A36C3 /* XPage */ = {
+		47B49A49206939ED000A36C3 /* 分页控制器 */ = {
 			isa = PBXGroup;
 			children = (
 				47B49A5720694D22000A36C3 /* C */,
@@ -1032,7 +1032,7 @@
 				47B49A5320694D22000A36C3 /* V */,
 				47B49A5220694D22000A36C3 /* VM */,
 			);
-			path = XPage;
+			path = "分页控制器";
 			sourceTree = "<group>";
 		};
 		47B49A5220694D22000A36C3 /* VM */ = {

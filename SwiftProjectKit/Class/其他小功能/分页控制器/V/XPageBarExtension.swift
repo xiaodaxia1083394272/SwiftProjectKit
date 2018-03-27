@@ -25,7 +25,18 @@ extension XPageBar{
             titleLabel.font = UIFont.systemFont(ofSize: 14)
             titleLabel.labelFitToText()
             self.scrollView.addSubview(titleLabel)
+            X += titleLabel.frame.size.width
+            //pss_todo
+//            let tap = UITapGestureRecognizer(target: self, action: #selector(self.titleLabelClicked(_:)))
+            
+            self.titleLabelArr.append(titleLabel)
+            
+            
         }
+        self.scrollView.contentSize.width = X
+    }
+     func titleLabelClicked(tap:UITapGestureRecognizer) -> Void {
+        
     }
 }
 //pss_todo  15  14:28

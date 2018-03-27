@@ -30,6 +30,9 @@ class XPageViewController: UIViewController {
         self.XScrollView.isPagingEnabled = true//分页显示
         self.XScrollView.bounces = false//不弹性
         view.addSubview(self.XScrollView)
+        
+        self.PageBar.frame = CGRect(x: 0, y: 64, width: self.width, height: 44)
+        view.addSubview(self.PageBar)
     }
     //pss_7.构造函数为什么一定要这一坨，目前还不太清楚
     required init?(coder aDecoder: NSCoder) {

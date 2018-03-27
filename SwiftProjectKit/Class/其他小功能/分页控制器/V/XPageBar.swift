@@ -16,9 +16,10 @@ class XPageBar: UIView {
     var scrollView:UIScrollView!
     let width = UIScreen.main.bounds.size.width
     let height = UIScreen.main.bounds.size.height
+    var titleLabelArr:Array<UILabel> = []
     var titleArr :Array<String> = []{
         didSet{
-            
+          self.addTitleLabelToPageBar()
         }
     }
     override init(frame: CGRect) {
