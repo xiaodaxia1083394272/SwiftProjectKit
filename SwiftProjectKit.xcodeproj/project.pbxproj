@@ -1607,8 +1607,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45L2BJS8P9;
+				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = SwiftProjectKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyangyang.SwiftProjectKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1623,8 +1624,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45L2BJS8P9;
+				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = SwiftProjectKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyangyang.SwiftProjectKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

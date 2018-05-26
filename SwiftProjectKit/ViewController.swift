@@ -16,7 +16,12 @@ class ViewController: UIViewController {
         let r = arc4random()%255
         let g = arc4random()%255
         let b = arc4random()%255
-        self.view.backgroundColor = UIColor(displayP3Red: r.FloatValue/255, green: g.FloatValue/255, blue: b.FloatValue/255, alpha: 1)
+        //这种写法仅存在于ios10以上
+        if #available(iOS 10.0, *) {
+            self.view.backgroundColor = UIColor(displayP3Red: r.FloatValue/255, green: g.FloatValue/255, blue: b.FloatValue/255, alpha: 1)
+        } else {
+            // Fallback on earlier versions
+        }
 
     }
 
