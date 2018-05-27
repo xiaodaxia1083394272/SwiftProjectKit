@@ -12,6 +12,9 @@ class BaseNavgationController: UINavigationController,UINavigationControllerDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var cString = "123456"
+       cString =  (cString as NSString).substring(to:2)
+       print("test\(cString)")
         
         let textAttributes = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 18),NSAttributedStringKey.foregroundColor:UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = textAttributes

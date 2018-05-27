@@ -272,6 +272,8 @@
 		471E1F63205BCF5B000536BB /* qrcode_button_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471E1E62205BCF5A000536BB /* qrcode_button_background@2x.png */; };
 		471E1F64205BCF5B000536BB /* qrcode_scanline_barcode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471E1E63205BCF5A000536BB /* qrcode_scanline_barcode@3x.png */; };
 		471E1F65205BCF5B000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471E1E64205BCF5A000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png */; };
+		4761CCF620BA5ABF00353E0A /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761CCF520BA5ABF00353E0A /* PrefixHeader.swift */; };
+		4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761CCF820BA828100353E0A /* ProjectCategoryOrSayExtension.swift */; };
 		47906081205983C0000E74A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47906080205983C0000E74A5 /* AppDelegate.swift */; };
 		47906083205983C0000E74A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47906082205983C0000E74A5 /* ViewController.swift */; };
 		47906086205983C0000E74A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47906084205983C0000E74A5 /* Main.storyboard */; };
@@ -551,7 +553,8 @@
 		471E1E62205BCF5A000536BB /* qrcode_button_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_button_background@2x.png"; sourceTree = "<group>"; };
 		471E1E63205BCF5A000536BB /* qrcode_scanline_barcode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scanline_barcode@3x.png"; sourceTree = "<group>"; };
 		471E1E64205BCF5A000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_tabbar_icon_qrcode_highlighted@3x.png"; sourceTree = "<group>"; };
-		471E1F67205BD19A000536BB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4761CCF520BA5ABF00353E0A /* PrefixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
+		4761CCF820BA828100353E0A /* ProjectCategoryOrSayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCategoryOrSayExtension.swift; sourceTree = "<group>"; };
 		4790607D205983C0000E74A5 /* SwiftProjectKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProjectKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47906080205983C0000E74A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47906082205983C0000E74A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -963,7 +966,6 @@
 		471E1F66205BD17D000536BB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				471E1F67205BD19A000536BB /* Header.h */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -982,6 +984,14 @@
 				47B49A49206939ED000A36C3 /* 分页控制器 */,
 			);
 			path = "其他小功能";
+			sourceTree = "<group>";
+		};
+		4761CCF720BA823700353E0A /* CategoryOrSayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4761CCF820BA828100353E0A /* ProjectCategoryOrSayExtension.swift */,
+			);
+			path = CategoryOrSayExtension;
 			sourceTree = "<group>";
 		};
 		47906074205983C0000E74A5 = {
@@ -1005,6 +1015,8 @@
 		4790607F205983C0000E74A5 /* SwiftProjectKit */ = {
 			isa = PBXGroup;
 			children = (
+				4761CCF720BA823700353E0A /* CategoryOrSayExtension */,
+				4761CCF520BA5ABF00353E0A /* PrefixHeader.swift */,
 				471E1F68205BD214000536BB /* Class */,
 				471E1F66205BD17D000536BB /* Main */,
 				471E1D5D205BCF5A000536BB /* Resource */,
@@ -1456,8 +1468,10 @@
 			files = (
 				47906083205983C0000E74A5 /* ViewController.swift in Sources */,
 				47B49A5B20694D22000A36C3 /* valueExtension.swift in Sources */,
+				4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */,
 				471E1D4E205BC51E000536BB /* BaseViewController.swift in Sources */,
 				47906081205983C0000E74A5 /* AppDelegate.swift in Sources */,
+				4761CCF620BA5ABF00353E0A /* PrefixHeader.swift in Sources */,
 				47B49A5D20694D22000A36C3 /* XPageViewController.swift in Sources */,
 				471E1D58205BC68F000536BB /* MoneyViewController.swift in Sources */,
 				471E1D56205BC677000536BB /* FriendViewController.swift in Sources */,
