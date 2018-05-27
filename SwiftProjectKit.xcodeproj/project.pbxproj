@@ -633,13 +633,13 @@
 		471E1D49205BC47F000536BB /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				471E1D4D205BC51E000536BB /* BaseViewController.swift */,
 				471E1D4F205BC61A000536BB /* AlipayViewController.swift */,
-				471E1D51205BC632000536BB /* ReputationViewController.swift */,
 				471E1D55205BC677000536BB /* FriendViewController.swift */,
 				471E1D57205BC68F000536BB /* MoneyViewController.swift */,
 				471E1D59205BC6A9000536BB /* CityListViewController.swift */,
 				471E1D5B205BCA12000536BB /* BaseNavgationController.swift */,
+				471E1D4D205BC51E000536BB /* BaseViewController.swift */,
+				471E1D51205BC632000536BB /* ReputationViewController.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";

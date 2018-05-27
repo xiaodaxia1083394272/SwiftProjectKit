@@ -10,20 +10,42 @@ import UIKit
 //pss_3.首页
 
 class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
-    
-    let functionList = ["自定义textView","tabbar模板","毛玻璃"]
-    
-    fileprivate lazy var tableView:UITableView = {[unowned self] in
-        //
-        let tableView = UITableView(frame: self.view.bounds)
-        tableView.delegate = self as? UITableViewDelegate
-        tableView.dataSource = self as? UITableViewDataSource
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
-        
-        return tableView
-        
+    let searchCell_id  = "searchCell_id"
+    //MARK:数据源
+    lazy var dataDic : [String:Any] = {
+        let dataDic = [
+            "自定义textview":"",
+            "毛玻璃":"",
+            "倒计时":"PKTimeVC",
+            "删除功能的图片浏览器":"",
+            "友盟登录分享":"PKUMVC",
+            "数据持久化":"PKSaveVC",
+            "视频相关":"PKVideoVC",
+            "音频相关":"PKAudioVC",
+            "蓝牙相关":"PKBluetoothVC",
+            "省市区选择器":"PKCitySelect",
+            "oc与web的交互":"OCAndWebInteractionVC",
+            "按钮":"YFButtonViewController",
+            "标签":"YFLabelViewController",
+            "视图布局":"YFViewLayoutViewController",
+            "视图切换":"YFViewTransitionViewController",
+            "零散知识点":"YFKnowledgeViewController",
+            "小项目展示":"YFLittleProjectViewController",
+            "动画集合":"YFAnimationsViewController",
+            "UIKit":"YFUIKitViewController",
+            "仿主流app功能":"YFImitateAppViewController",
+            "常用工具类":"YFToolsViewController",
+            "数据持久化":"YFDataPersistenceViewController",
+            "博客/论坛":"YFBlogViewController",
+            "算法":"YFAlgorithmViewController",
+            "图片处理相关汇总":"PKPhotoHandle",
+            "socket":"PKSocket",
+            "环信3.4.1":"",
+            "绘图":"PKDrawing"]
+            print("------") //按理说应该只打印一次
+        return dataDic
     }()
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +56,8 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         self.navigationItem.titleView = textField
     }
     
+    //MARK:-----tableViewDelegateAndDatasource
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
         return 5
@@ -41,9 +65,8 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //pss_注1.习惯写上对象的类型
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(UITableViewCell.self)", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(searchCell_id)", for: indexPath)
         cell.selectionStyle = .none
-//        let child = children[indexPath.row]
         cell.textLabel?.text = "memeda"
         cell.textLabel?.textAlignment = .center
         cell.textLabel?.font = UIFont.systemFont(ofSize: 13)
@@ -54,7 +77,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         
         jumpToPageVC()
     }
-    //
+    //MARK:用户交互
     func jumpToPageVC(){
         let vc1 = ViewController()
         let vc2 = ViewController()
@@ -73,10 +96,30 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         pageViewController.controllers = vcList
   self.navigationController?.pushViewController(pageViewController, animated: true)
     }
+    
+    //MARK:---------懒加载------
+    fileprivate lazy var tableView : UITableView = {[unowned self] in
+        //
+        let tableView = UITableView(frame: self.view.bounds)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "\(searchCell_id)")
+        
+        return tableView
+        
+        }()
+    
+    fileprivate lazy var functionKitList :[String] = {
+        // 其实只要使用一点小技巧就能解决了,强转
+        var functionKitList = Array(self.dataDic.keys);
+        return functionKitList;
+    }()
+
+    
 }
 
 extension AlipayViewController{
-    
+
     //
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool{
         
@@ -84,6 +127,6 @@ extension AlipayViewController{
         
         return true
     }
-    
+
 }
 

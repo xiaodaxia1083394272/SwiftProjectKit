@@ -9,17 +9,16 @@
 import UIKit
 
 class BaseNavgationController: UINavigationController,UINavigationControllerDelegate {
-
+    //初始化导航栏之公共导航栏设置
     override func viewDidLoad() {
         super.viewDidLoad()
-        var cString = "123456"
-       cString =  (cString as NSString).substring(to:2)
-       print("test\(cString)")
+
         
-        let textAttributes = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 18),NSAttributedStringKey.foregroundColor:UIColor.white]
+        let textAttributes = [NSAttributedStringKey.font:kFont(18),NSAttributedStringKey.foregroundColor:kWhiteColor]
         UINavigationBar.appearance().titleTextAttributes = textAttributes
-            UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().barTintColor = UIColor.red
+            UINavigationBar.appearance().tintColor = kWhiteColor
+        UINavigationBar.appearance().barTintColor = kRedColor
+        //导航栏半透明
         UINavigationBar.appearance().isTranslucent = true
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
