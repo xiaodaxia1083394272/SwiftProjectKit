@@ -120,12 +120,43 @@ func SysFontPix(_ size :CGFloat) -> UIFont{
     return kFont(size * 0.5)
 }
 
-//MARK:16进制颜色  "#00FF07"
-func hexCOLOR(_ size :String) -> UIColor{
-   
-    return UIColor.colorWithHexString(size)
-}
+//MARK:透明，白，红，绿，蓝，灰，橙色
+let kClearColor =                UIColor.clear
+let kWhiteColor =               UIColor.white
+let kGrayColor  =               UIColor.gray
+let kBlueColor  =               UIColor.blue
+let kRedColor   =               UIColor.red
+let kOrangeColor =              UIColor.orange
+let kBlackColor  =              UIColor.black
+let kGreenColor  =              UIColor.green
+let kYellowColor =              UIColor.yellow
+let kPurpleColor =              UIColor.purple
 
+
+let kNoteCenter =   NotificationCenter.default
+
+let kApp  =      UIApplication.shared
+let kKeyWindow  =   kApp.keyWindow
+
+let kUserDefault =     UserDefaults.standard
+
+let kRootVC =  kKeyWindow?.rootViewController
+
+//MARK:图片
+func kImage(_ args :String) -> UIImage {
+    
+    return UIImage.init(named: args)!
+}
+//MARK:路径
+//Library/Caches 文件路径
+//#define kFilePath ([[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil])
+//let kFilePath   FileManager.default.
+
+//获取temp
+let kPathTemp = NSTemporaryDirectory()
+
+//获取沙盒 Cache
+let kPathCache = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first
 
 
 
