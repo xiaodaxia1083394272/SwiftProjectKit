@@ -121,10 +121,10 @@ func SysFontPix(_ size :CGFloat) -> UIFont{
 }
 
 //MARK:16进制颜色  "#00FF07"
-//func hexCOLOR(_ size :String) -> UIColor{
-//   
-//    return UIColor.colorWithHexString(size)
-//}
+func hexCOLOR(_ size :String) -> UIColor{
+   
+    return UIColor.colorWithHexString(size)
+}
 
 
 
