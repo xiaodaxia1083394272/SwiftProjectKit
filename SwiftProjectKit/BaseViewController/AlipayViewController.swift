@@ -76,26 +76,21 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        jumpToPageVC()
-    }
-    //MARK:用户交互
-    func jumpToPageVC(){
-        let vc1 = ViewController()
-        let vc2 = ViewController()
-        let vc3 = ViewController()
-        let vc4 = ViewController()
-        let vc5 = ViewController()
-        vc1.title = "ViewController title1"
-        vc2.title = "ViewController title2"
-        vc3.title = "ViewController title3"
-        vc4.title = "ViewController title4"
-        vc5.title = "ViewController title5"
+        let aimStr = self.searchList[indexPath.row];
 
-        let vcList = [vc1,vc2,vc3,vc4,vc5]
-        let pageViewController = XPageViewController()
-       //pss_4.for 循环没有小括号的注意了
-        pageViewController.controllers = vcList
-  self.navigationController?.pushViewController(pageViewController, animated: true)
+        //字符串判断为空，跟oc是不一样的，注意了
+        if aimStr.isEmpty{
+            return
+        }
+        let className = self.dataDic[aimStr];
+        if let classNameH = className{
+           //pss_oc中用NSClassFromString看中了其方便，不过swift中居然这么麻烦，ps：顺便吐槽一句，我可选绑定后貌似还是要强解
+           let  mfvc = NSClassFromString(classNameH as! String) as! UIViewController.Type//swifit是强类型语言，所以需要转成目标类型，比如UIViewController
+            let fvc = mfvc.init();//还要实例一下，swift已经弱化到连实例一下都不给你弄了
+            self.navigationController?.pushViewController(fvc, animated: true)
+
+        }
+    
     }
     
     //MARK:---------懒加载------
