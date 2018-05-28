@@ -16,6 +16,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     lazy var dataDic : Dictionary<String,Any> = {
         let dataDic = [
             "自定义textview":"",
+            "swift的委托":"SPDelegateVC",
             "毛玻璃":"",
             "倒计时":"PKTimeVC",
             "删除功能的图片浏览器":"",
@@ -82,15 +83,21 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         if aimStr.isEmpty{
             return
         }
-        let className = self.dataDic[aimStr];
-        if let classNameH = className{
-           //pss_oc中用NSClassFromString看中了其方便，不过swift中居然这么麻烦，ps：顺便吐槽一句，我可选绑定后貌似还是要强解
-           let  mfvc = NSClassFromString(classNameH as! String) as! UIViewController.Type//swifit是强类型语言，所以需要转成目标类型，比如UIViewController
-            let fvc = mfvc.init();//还要实例一下，swift已经弱化到连实例一下都不给你弄了
-            self.navigationController?.pushViewController(fvc, animated: true)
-
+        if self.dataDic[aimStr] != nil{
+            
+            let className = self.dataDic[aimStr]!;
+            let jumpClassName = "SwiftProjectKit.\(String(describing: className))"
+            // 依据String名字拿到控制器(添加项目名称，命名空间，不能有数字和特殊符号)
+            // 返回的是AnyClass？ 需要as？强转
+            // 控制器添加Type类型
+            let rootControl = NSClassFromString(jumpClassName) as? UIViewController.Type
+            
+            let vc = rootControl?.init()
+            
+            self.navigationController?.pushViewController(vc!, animated: true)
+            
         }
-    
+
     }
     
     //MARK:---------懒加载------

@@ -285,6 +285,8 @@
 		47B49A5D20694D22000A36C3 /* XPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B49A5920694D22000A36C3 /* XPageViewController.swift */; };
 		47B49A60206950A2000A36C3 /* XPageBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B49A5F206950A2000A36C3 /* XPageBarExtension.swift */; };
 		62061E6550D1E599D0782120 /* Pods_SwiftProjectKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857D8966CAF8B2E3D0C3DB6 /* Pods_SwiftProjectKit.framework */; };
+		8F02841120BBAC1600CCFF65 /* SPDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02840F20BBAC1600CCFF65 /* SPDelegateVC.swift */; };
+		8F02841220BBAC1600CCFF65 /* SPDelegateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841020BBAC1600CCFF65 /* SPDelegateVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -569,6 +571,8 @@
 		47B49A5F206950A2000A36C3 /* XPageBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPageBarExtension.swift; sourceTree = "<group>"; };
 		5119E942B23ADF876BB00852 /* Pods-SwiftProjectKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjectKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProjectKit/Pods-SwiftProjectKit.release.xcconfig"; sourceTree = "<group>"; };
 		6CBB4FCAD45E9471C7FD92B5 /* Pods-SwiftProjectKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjectKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProjectKit/Pods-SwiftProjectKit.debug.xcconfig"; sourceTree = "<group>"; };
+		8F02840F20BBAC1600CCFF65 /* SPDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDelegateVC.swift; sourceTree = "<group>"; };
+		8F02841020BBAC1600CCFF65 /* SPDelegateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPDelegateVC.xib; sourceTree = "<group>"; };
 		E857D8966CAF8B2E3D0C3DB6 /* Pods_SwiftProjectKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjectKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -981,6 +985,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				8F02840E20BBABB400CCFF65 /* 委托 */,
 				47B49A49206939ED000A36C3 /* 分页控制器 */,
 			);
 			path = "其他小功能";
@@ -1080,6 +1085,15 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		8F02840E20BBABB400CCFF65 /* 委托 */ = {
+			isa = PBXGroup;
+			children = (
+				8F02840F20BBAC1600CCFF65 /* SPDelegateVC.swift */,
+				8F02841020BBAC1600CCFF65 /* SPDelegateVC.xib */,
+			);
+			path = "委托";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1109,6 +1123,7 @@
 		47906075205983C0000E74A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SP;
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = HMRL;
@@ -1322,6 +1337,7 @@
 				471E1F34205BCF5B000536BB /* PullReflashIcon@2x.png in Resources */,
 				471E1E89205BCF5A000536BB /* O2O-NO_SMOKING@2x.png in Resources */,
 				471E1F54205BCF5B000536BB /* lighton@2x.png in Resources */,
+				8F02841220BBAC1600CCFF65 /* SPDelegateVC.xib in Resources */,
 				471E1F4D205BCF5B000536BB /* qrcode_border@2x.png in Resources */,
 				471E1F58205BCF5B000536BB /* ewm@2x.png in Resources */,
 				471E1ECA205BCF5A000536BB /* O2O-PARKING@3x.png in Resources */,
@@ -1476,6 +1492,7 @@
 				471E1D58205BC68F000536BB /* MoneyViewController.swift in Sources */,
 				471E1D56205BC677000536BB /* FriendViewController.swift in Sources */,
 				47B49A5A20694D22000A36C3 /* XPageBar.swift in Sources */,
+				8F02841120BBAC1600CCFF65 /* SPDelegateVC.swift in Sources */,
 				471E1D4C205BC4C9000536BB /* WMTabbarController.swift in Sources */,
 				47B49A60206950A2000A36C3 /* XPageBarExtension.swift in Sources */,
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
