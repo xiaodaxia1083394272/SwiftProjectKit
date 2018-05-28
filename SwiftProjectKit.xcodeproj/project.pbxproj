@@ -291,6 +291,10 @@
 		8F02841820BBE8F000CCFF65 /* SPSwiftBlockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02841620BBE8F000CCFF65 /* SPSwiftBlockVC.swift */; };
 		8F02841920BBE8F000CCFF65 /* SPSwiftBlockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841720BBE8F000CCFF65 /* SPSwiftBlockVC.xib */; };
 		8F02841B20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02841A20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift */; };
+		8F02841F20BBF03200CCFF65 /* SPBridgeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02841D20BBF03200CCFF65 /* SPBridgeVc.swift */; };
+		8F02842020BBF03200CCFF65 /* SPBridgeVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841E20BBF03200CCFF65 /* SPBridgeVc.xib */; };
+		8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F02842320BC04ED00CCFF65 /* SPTestBriage.m */; };
+		8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -581,6 +585,12 @@
 		8F02841620BBE8F000CCFF65 /* SPSwiftBlockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSwiftBlockVC.swift; sourceTree = "<group>"; };
 		8F02841720BBE8F000CCFF65 /* SPSwiftBlockVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPSwiftBlockVC.xib; sourceTree = "<group>"; };
 		8F02841A20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestSwiftBlcokObjcet.swift; sourceTree = "<group>"; };
+		8F02841D20BBF03200CCFF65 /* SPBridgeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBridgeVc.swift; sourceTree = "<group>"; };
+		8F02841E20BBF03200CCFF65 /* SPBridgeVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPBridgeVc.xib; sourceTree = "<group>"; };
+		8F02842120BC04EC00CCFF65 /* SwiftProjectKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftProjectKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F02842220BC04ED00CCFF65 /* SPTestBriage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTestBriage.h; sourceTree = "<group>"; };
+		8F02842320BC04ED00CCFF65 /* SPTestBriage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTestBriage.m; sourceTree = "<group>"; };
+		8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSwiftTestBriageObj.swift; sourceTree = "<group>"; };
 		E857D8966CAF8B2E3D0C3DB6 /* Pods_SwiftProjectKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjectKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -993,6 +1003,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				8F02841C20BBF00000CCFF65 /* 桥接 */,
 				8F02841520BBE87700CCFF65 /* 闭包 */,
 				8F02840E20BBABB400CCFF65 /* 委托 */,
 				47B49A49206939ED000A36C3 /* 分页控制器 */,
@@ -1114,6 +1125,19 @@
 			path = "闭包";
 			sourceTree = "<group>";
 		};
+		8F02841C20BBF00000CCFF65 /* 桥接 */ = {
+			isa = PBXGroup;
+			children = (
+				8F02841D20BBF03200CCFF65 /* SPBridgeVc.swift */,
+				8F02841E20BBF03200CCFF65 /* SPBridgeVc.xib */,
+				8F02842220BC04ED00CCFF65 /* SPTestBriage.h */,
+				8F02842320BC04ED00CCFF65 /* SPTestBriage.m */,
+				8F02842120BC04EC00CCFF65 /* SwiftProjectKit-Bridging-Header.h */,
+				8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */,
+			);
+			path = "桥接";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1150,6 +1174,7 @@
 				TargetAttributes = {
 					4790607C205983C0000E74A5 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1302,6 +1327,7 @@
 				471E1F45205BCF5B000536BB /* inSafeGuard@2x.png in Resources */,
 				471E1F03205BCF5A000536BB /* 20000224_contactA@2x.png in Resources */,
 				471E1E8F205BCF5A000536BB /* arrow_expand@2x.png in Resources */,
+				8F02842020BBF03200CCFF65 /* SPBridgeVc.xib in Resources */,
 				471E1EE6205BCF5A000536BB /* 88886666_contactA@2x.png in Resources */,
 				471E1E93205BCF5A000536BB /* placeholder_white@2x.png in Resources */,
 				471E1EBB205BCF5A000536BB /* merchant@2x.png in Resources */,
@@ -1503,7 +1529,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */,
 				47906083205983C0000E74A5 /* ViewController.swift in Sources */,
+				8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */,
 				47B49A5B20694D22000A36C3 /* valueExtension.swift in Sources */,
 				4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */,
 				471E1D4E205BC51E000536BB /* BaseViewController.swift in Sources */,
@@ -1515,6 +1543,7 @@
 				471E1D56205BC677000536BB /* FriendViewController.swift in Sources */,
 				47B49A5A20694D22000A36C3 /* XPageBar.swift in Sources */,
 				8F02841120BBAC1600CCFF65 /* SPDelegateVC.swift in Sources */,
+				8F02841F20BBF03200CCFF65 /* SPBridgeVc.swift in Sources */,
 				471E1D4C205BC4C9000536BB /* WMTabbarController.swift in Sources */,
 				47B49A60206950A2000A36C3 /* XPageBarExtension.swift in Sources */,
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
@@ -1661,13 +1690,17 @@
 			baseConfigurationReference = 6CBB4FCAD45E9471C7FD92B5 /* Pods-SwiftProjectKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = SwiftProjectKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyangyang.SwiftProjectKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProjectKit/Class/其他小功能/桥接/SwiftProjectKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1678,13 +1711,16 @@
 			baseConfigurationReference = 5119E942B23ADF876BB00852 /* Pods-SwiftProjectKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = SwiftProjectKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyangyang.SwiftProjectKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProjectKit/Class/其他小功能/桥接/SwiftProjectKit-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

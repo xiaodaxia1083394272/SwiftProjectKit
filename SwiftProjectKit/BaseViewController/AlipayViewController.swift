@@ -18,6 +18,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "自定义textview":"",
             "swift的委托":"SPDelegateVC",
             "swift的闭包（oc中的block）":"SPSwiftBlockVC",
+            "swift桥接oc的代码":"SPBridgeVc",
             "毛玻璃":"",
             "倒计时":"PKTimeVC",
             "删除功能的图片浏览器":"",
