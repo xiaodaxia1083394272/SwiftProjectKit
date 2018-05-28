@@ -12,14 +12,14 @@ import UIKit
 class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
     let searchCell_id  = "searchCell_id"
     //MARK:数据源
-    lazy var dataDic : [String:Any] = {
+    //pss_swift中字典同级的key不能一样，这样奇葩（貌似oc可以，不过自动去掉了重复的了）
+    lazy var dataDic : Dictionary<String,Any> = {
         let dataDic = [
             "自定义textview":"",
             "毛玻璃":"",
             "倒计时":"PKTimeVC",
             "删除功能的图片浏览器":"",
             "友盟登录分享":"PKUMVC",
-            "数据持久化":"PKSaveVC",
             "视频相关":"PKVideoVC",
             "音频相关":"PKAudioVC",
             "蓝牙相关":"PKBluetoothVC",
@@ -36,8 +36,6 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "仿主流app功能":"YFImitateAppViewController",
             "常用工具类":"YFToolsViewController",
             "数据持久化":"YFDataPersistenceViewController",
-            "博客/论坛":"YFBlogViewController",
-            "算法":"YFAlgorithmViewController",
             "图片处理相关汇总":"PKPhotoHandle",
             "socket":"PKSocket",
             "环信3.4.1":"",
@@ -48,28 +46,31 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
+
+    }
+    //MARK:---------设置UI------
+    func setUpUI(){
         
         view.addSubview(tableView)
-        let textField = UITextField(frame:CGRect(x: 0, y: 0, width: 200, height: 30))
-        textField.delegate = self
-        textField.backgroundColor = UIColor.yellow
-        self.navigationItem.titleView = textField
+        self.navigationItem.titleView = self.textField
+
     }
     
     //MARK:-----tableViewDelegateAndDatasource
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
-        return 5
+        return self.searchList.count
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //pss_注1.习惯写上对象的类型
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(searchCell_id)", for: indexPath)
         cell.selectionStyle = .none
-        cell.textLabel?.text = "memeda"
+        cell.textLabel?.text = self.searchList[indexPath.row]
         cell.textLabel?.textAlignment = .center
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 13)
+        cell.textLabel?.font = kFont(13)
         return cell
     }
     
@@ -109,15 +110,32 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         
         }()
     
+    fileprivate lazy var textField : UITextField = {
+        let textField = UITextField(frame:CGRect(x: 0, y: 0, width: kFitW(200), height: kFitH(30)))
+        textField.delegate = self
+        textField.backgroundColor = kYellowColor
+        textField.placeholder = "搜索关键字"
+
+        
+        return textField
+    }()
+    
     fileprivate lazy var functionKitList :[String] = {
         // 其实只要使用一点小技巧就能解决了,强转
         var functionKitList = Array(self.dataDic.keys);
         return functionKitList;
     }()
-
+        
+    fileprivate lazy var searchList : [String] = {
+        
+        var searchList = self.functionKitList
+        
+        return searchList
+    }()
     
 }
 
+//MARK:扩展
 extension AlipayViewController{
 
     //
