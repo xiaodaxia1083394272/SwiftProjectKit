@@ -288,6 +288,9 @@
 		8F02841120BBAC1600CCFF65 /* SPDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02840F20BBAC1600CCFF65 /* SPDelegateVC.swift */; };
 		8F02841220BBAC1600CCFF65 /* SPDelegateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841020BBAC1600CCFF65 /* SPDelegateVC.xib */; };
 		8F02841420BBDCC500CCFF65 /* SPTestDelegateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02841320BBDCC500CCFF65 /* SPTestDelegateObject.swift */; };
+		8F02841820BBE8F000CCFF65 /* SPSwiftBlockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02841620BBE8F000CCFF65 /* SPSwiftBlockVC.swift */; };
+		8F02841920BBE8F000CCFF65 /* SPSwiftBlockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841720BBE8F000CCFF65 /* SPSwiftBlockVC.xib */; };
+		8F02841B20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02841A20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -575,6 +578,9 @@
 		8F02840F20BBAC1600CCFF65 /* SPDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDelegateVC.swift; sourceTree = "<group>"; };
 		8F02841020BBAC1600CCFF65 /* SPDelegateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPDelegateVC.xib; sourceTree = "<group>"; };
 		8F02841320BBDCC500CCFF65 /* SPTestDelegateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestDelegateObject.swift; sourceTree = "<group>"; };
+		8F02841620BBE8F000CCFF65 /* SPSwiftBlockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSwiftBlockVC.swift; sourceTree = "<group>"; };
+		8F02841720BBE8F000CCFF65 /* SPSwiftBlockVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPSwiftBlockVC.xib; sourceTree = "<group>"; };
+		8F02841A20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestSwiftBlcokObjcet.swift; sourceTree = "<group>"; };
 		E857D8966CAF8B2E3D0C3DB6 /* Pods_SwiftProjectKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjectKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -987,6 +993,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				8F02841520BBE87700CCFF65 /* 闭包 */,
 				8F02840E20BBABB400CCFF65 /* 委托 */,
 				47B49A49206939ED000A36C3 /* 分页控制器 */,
 			);
@@ -1095,6 +1102,16 @@
 				8F02841320BBDCC500CCFF65 /* SPTestDelegateObject.swift */,
 			);
 			path = "委托";
+			sourceTree = "<group>";
+		};
+		8F02841520BBE87700CCFF65 /* 闭包 */ = {
+			isa = PBXGroup;
+			children = (
+				8F02841620BBE8F000CCFF65 /* SPSwiftBlockVC.swift */,
+				8F02841720BBE8F000CCFF65 /* SPSwiftBlockVC.xib */,
+				8F02841A20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift */,
+			);
+			path = "闭包";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1401,6 +1418,7 @@
 				471E1E90205BCF5A000536BB /* imageLoading@2x.png in Resources */,
 				471E1E67205BCF5A000536BB /* scan@2x.png in Resources */,
 				471E1EA6205BCF5A000536BB /* navibar_search_icon@3x.png in Resources */,
+				8F02841920BBE8F000CCFF65 /* SPSwiftBlockVC.xib in Resources */,
 				471E1EF6205BCF5A000536BB /* 20000223_contactA@2x.png in Resources */,
 				471E1ECC205BCF5A000536BB /* no_location_right@2x.png in Resources */,
 				471E1F0B205BCF5B000536BB /* 20000000@2x.png in Resources */,
@@ -1491,6 +1509,7 @@
 				471E1D4E205BC51E000536BB /* BaseViewController.swift in Sources */,
 				47906081205983C0000E74A5 /* AppDelegate.swift in Sources */,
 				4761CCF620BA5ABF00353E0A /* PrefixHeader.swift in Sources */,
+				8F02841B20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift in Sources */,
 				47B49A5D20694D22000A36C3 /* XPageViewController.swift in Sources */,
 				471E1D58205BC68F000536BB /* MoneyViewController.swift in Sources */,
 				471E1D56205BC677000536BB /* FriendViewController.swift in Sources */,
@@ -1500,6 +1519,7 @@
 				47B49A60206950A2000A36C3 /* XPageBarExtension.swift in Sources */,
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
 				471E1D52205BC632000536BB /* ReputationViewController.swift in Sources */,
+				8F02841820BBE8F000CCFF65 /* SPSwiftBlockVC.swift in Sources */,
 				8F02841420BBDCC500CCFF65 /* SPTestDelegateObject.swift in Sources */,
 				471E1D5C205BCA12000536BB /* BaseNavgationController.swift in Sources */,
 				471E1D5A205BC6A9000536BB /* CityListViewController.swift in Sources */,
@@ -1644,7 +1664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = SwiftProjectKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyangyang.SwiftProjectKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1661,7 +1681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = SwiftProjectKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyangyang.SwiftProjectKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
