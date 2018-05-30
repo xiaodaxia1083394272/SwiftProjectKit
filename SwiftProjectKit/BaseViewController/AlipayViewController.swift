@@ -19,7 +19,8 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "swift的委托":"SPDelegateVC",
             "swift的闭包（oc中的block）":"SPSwiftBlockVC",
             "swift桥接oc的代码":"SPBridgeVc",
-            "毛玻璃":"",
+            "swift的网络请求":"SPQueryServeDataVC"
+            /*"毛玻璃":"",
             "倒计时":"PKTimeVC",
             "删除功能的图片浏览器":"",
             "友盟登录分享":"PKUMVC",
@@ -42,7 +43,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "图片处理相关汇总":"PKPhotoHandle",
             "socket":"PKSocket",
             "环信3.4.1":"",
-            "绘图":"PKDrawing"]
+            "绘图":"PKDrawing"*/]
             print("------") //按理说应该只打印一次
         return dataDic
     }()

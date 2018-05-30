@@ -295,6 +295,18 @@
 		8F02842020BBF03200CCFF65 /* SPBridgeVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841E20BBF03200CCFF65 /* SPBridgeVc.xib */; };
 		8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F02842320BC04ED00CCFF65 /* SPTestBriage.m */; };
 		8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */; };
+		8F7D203620BE3DCD00DECBE7 /* SPQueryServeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203420BE3DCD00DECBE7 /* SPQueryServeDataVC.swift */; };
+		8F7D203720BE3DCD00DECBE7 /* SPQueryServeDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D203520BE3DCD00DECBE7 /* SPQueryServeDataVC.xib */; };
+		8F7D203920BE3E0400DECBE7 /* SPTestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203820BE3E0400DECBE7 /* SPTestService.swift */; };
+		8F7D203B20BE419200DECBE7 /* SSLoginNetWorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203A20BE419200DECBE7 /* SSLoginNetWorkRequest.swift */; };
+		8F7D203D20BE486B00DECBE7 /* SPAddressM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203C20BE486B00DECBE7 /* SPAddressM.swift */; };
+		8F7D203F20BE4FF100DECBE7 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203E20BE4FF100DECBE7 /* HttpTool.swift */; };
+		8F7D204520BE74AF00DECBE7 /* GJNetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D204220BE74AF00DECBE7 /* GJNetworkReachability.swift */; };
+		8F7D204620BE74AF00DECBE7 /* GJNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D204320BE74AF00DECBE7 /* GJNetWorkTool.swift */; };
+		8F7D204720BE74AF00DECBE7 /* GJNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D204420BE74AF00DECBE7 /* GJNetwork.swift */; };
+		8F7D204920BE764C00DECBE7 /* NetWorkFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D204820BE764B00DECBE7 /* NetWorkFile.swift */; };
+		8F7D204B20BE767D00DECBE7 /* GJUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D204A20BE767C00DECBE7 /* GJUtil.swift */; };
+		8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D205320BE7E0200DECBE7 /* SPTestAla.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -591,6 +603,18 @@
 		8F02842220BC04ED00CCFF65 /* SPTestBriage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTestBriage.h; sourceTree = "<group>"; };
 		8F02842320BC04ED00CCFF65 /* SPTestBriage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTestBriage.m; sourceTree = "<group>"; };
 		8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSwiftTestBriageObj.swift; sourceTree = "<group>"; };
+		8F7D203420BE3DCD00DECBE7 /* SPQueryServeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPQueryServeDataVC.swift; sourceTree = "<group>"; };
+		8F7D203520BE3DCD00DECBE7 /* SPQueryServeDataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPQueryServeDataVC.xib; sourceTree = "<group>"; };
+		8F7D203820BE3E0400DECBE7 /* SPTestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestService.swift; sourceTree = "<group>"; };
+		8F7D203A20BE419200DECBE7 /* SSLoginNetWorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLoginNetWorkRequest.swift; sourceTree = "<group>"; };
+		8F7D203C20BE486B00DECBE7 /* SPAddressM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAddressM.swift; sourceTree = "<group>"; };
+		8F7D203E20BE4FF100DECBE7 /* HttpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
+		8F7D204220BE74AF00DECBE7 /* GJNetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJNetworkReachability.swift; sourceTree = "<group>"; };
+		8F7D204320BE74AF00DECBE7 /* GJNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJNetWorkTool.swift; sourceTree = "<group>"; };
+		8F7D204420BE74AF00DECBE7 /* GJNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJNetwork.swift; sourceTree = "<group>"; };
+		8F7D204820BE764B00DECBE7 /* NetWorkFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkFile.swift; sourceTree = "<group>"; };
+		8F7D204A20BE767C00DECBE7 /* GJUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJUtil.swift; sourceTree = "<group>"; };
+		8F7D205320BE7E0200DECBE7 /* SPTestAla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestAla.swift; sourceTree = "<group>"; };
 		E857D8966CAF8B2E3D0C3DB6 /* Pods_SwiftProjectKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjectKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1003,6 +1027,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				8F7D203320BE3DA400DECBE7 /* 网络请求 */,
 				8F02841C20BBF00000CCFF65 /* 桥接 */,
 				8F02841520BBE87700CCFF65 /* 闭包 */,
 				8F02840E20BBABB400CCFF65 /* 委托 */,
@@ -1138,6 +1163,41 @@
 			path = "桥接";
 			sourceTree = "<group>";
 		};
+		8F7D203320BE3DA400DECBE7 /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				8F7D204F20BE7DC800DECBE7 /* 自测 */,
+				8F7D204120BE74AF00DECBE7 /* NetWork */,
+				8F7D203A20BE419200DECBE7 /* SSLoginNetWorkRequest.swift */,
+				8F7D203420BE3DCD00DECBE7 /* SPQueryServeDataVC.swift */,
+				8F7D203520BE3DCD00DECBE7 /* SPQueryServeDataVC.xib */,
+				8F7D203820BE3E0400DECBE7 /* SPTestService.swift */,
+				8F7D203C20BE486B00DECBE7 /* SPAddressM.swift */,
+				8F7D203E20BE4FF100DECBE7 /* HttpTool.swift */,
+			);
+			path = "网络请求";
+			sourceTree = "<group>";
+		};
+		8F7D204120BE74AF00DECBE7 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				8F7D204A20BE767C00DECBE7 /* GJUtil.swift */,
+				8F7D204820BE764B00DECBE7 /* NetWorkFile.swift */,
+				8F7D204220BE74AF00DECBE7 /* GJNetworkReachability.swift */,
+				8F7D204320BE74AF00DECBE7 /* GJNetWorkTool.swift */,
+				8F7D204420BE74AF00DECBE7 /* GJNetwork.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		8F7D204F20BE7DC800DECBE7 /* 自测 */ = {
+			isa = PBXGroup;
+			children = (
+				8F7D205320BE7E0200DECBE7 /* SPTestAla.swift */,
+			);
+			path = "自测";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1210,6 +1270,7 @@
 				471E1EB3205BCF5A000536BB /* add_tag@2x.png in Resources */,
 				471E1EE9205BCF5A000536BB /* 20000193@2x.png in Resources */,
 				471E1EFE205BCF5A000536BB /* 20000691@2x.png in Resources */,
+				8F7D203720BE3DCD00DECBE7 /* SPQueryServeDataVC.xib in Resources */,
 				471E1F49205BCF5B000536BB /* credit@3x.png in Resources */,
 				471E1F06205BCF5B000536BB /* 20000219_contactA@2x.png in Resources */,
 				471E1F3C205BCF5B000536BB /* huabei@3x.png in Resources */,
@@ -1497,10 +1558,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProjectKit/Pods-SwiftProjectKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1532,27 +1597,38 @@
 				8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */,
 				47906083205983C0000E74A5 /* ViewController.swift in Sources */,
 				8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */,
+				8F7D203620BE3DCD00DECBE7 /* SPQueryServeDataVC.swift in Sources */,
+				8F7D204520BE74AF00DECBE7 /* GJNetworkReachability.swift in Sources */,
+				8F7D204720BE74AF00DECBE7 /* GJNetwork.swift in Sources */,
 				47B49A5B20694D22000A36C3 /* valueExtension.swift in Sources */,
 				4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */,
 				471E1D4E205BC51E000536BB /* BaseViewController.swift in Sources */,
 				47906081205983C0000E74A5 /* AppDelegate.swift in Sources */,
 				4761CCF620BA5ABF00353E0A /* PrefixHeader.swift in Sources */,
+				8F7D203D20BE486B00DECBE7 /* SPAddressM.swift in Sources */,
 				8F02841B20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift in Sources */,
 				47B49A5D20694D22000A36C3 /* XPageViewController.swift in Sources */,
+				8F7D204B20BE767D00DECBE7 /* GJUtil.swift in Sources */,
 				471E1D58205BC68F000536BB /* MoneyViewController.swift in Sources */,
 				471E1D56205BC677000536BB /* FriendViewController.swift in Sources */,
 				47B49A5A20694D22000A36C3 /* XPageBar.swift in Sources */,
 				8F02841120BBAC1600CCFF65 /* SPDelegateVC.swift in Sources */,
 				8F02841F20BBF03200CCFF65 /* SPBridgeVc.swift in Sources */,
+				8F7D203B20BE419200DECBE7 /* SSLoginNetWorkRequest.swift in Sources */,
 				471E1D4C205BC4C9000536BB /* WMTabbarController.swift in Sources */,
 				47B49A60206950A2000A36C3 /* XPageBarExtension.swift in Sources */,
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
 				471E1D52205BC632000536BB /* ReputationViewController.swift in Sources */,
 				8F02841820BBE8F000CCFF65 /* SPSwiftBlockVC.swift in Sources */,
 				8F02841420BBDCC500CCFF65 /* SPTestDelegateObject.swift in Sources */,
+				8F7D203F20BE4FF100DECBE7 /* HttpTool.swift in Sources */,
+				8F7D204920BE764C00DECBE7 /* NetWorkFile.swift in Sources */,
+				8F7D203920BE3E0400DECBE7 /* SPTestService.swift in Sources */,
 				471E1D5C205BCA12000536BB /* BaseNavgationController.swift in Sources */,
 				471E1D5A205BC6A9000536BB /* CityListViewController.swift in Sources */,
 				47B49A5C20694D22000A36C3 /* XPageExtension.swift in Sources */,
+				8F7D204620BE74AF00DECBE7 /* GJNetWorkTool.swift in Sources */,
+				8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

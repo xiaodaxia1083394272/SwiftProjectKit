@@ -3,6 +3,8 @@
 use_frameworks!
 target 'SwiftProjectKit' do
 pod 'Alamofire', '~> 4.6.0'
+pod 'ObjectMapper', '~> 3.2'
+pod 'SwiftyJSON', '~>3.1.4'
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 

@@ -3,3 +3,5 @@
 //
 
 #import "SPTestBriage.h"
+
+#import <CommonCrypto/CommonDigest.h>
