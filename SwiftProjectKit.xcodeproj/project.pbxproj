@@ -274,6 +274,9 @@
 		471E1F65205BCF5B000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471E1E64205BCF5A000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png */; };
 		4761CCF620BA5ABF00353E0A /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761CCF520BA5ABF00353E0A /* PrefixHeader.swift */; };
 		4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761CCF820BA828100353E0A /* ProjectCategoryOrSayExtension.swift */; };
+		47869AE820BED7BB002668BF /* SPClassFeaturesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47869AE620BED7BB002668BF /* SPClassFeaturesVC.swift */; };
+		47869AE920BED7BB002668BF /* SPClassFeaturesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47869AE720BED7BB002668BF /* SPClassFeaturesVC.xib */; };
+		47869AEB20BED87F002668BF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47869AEA20BED87F002668BF /* Person.swift */; };
 		47906081205983C0000E74A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47906080205983C0000E74A5 /* AppDelegate.swift */; };
 		47906083205983C0000E74A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47906082205983C0000E74A5 /* ViewController.swift */; };
 		47906086205983C0000E74A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47906084205983C0000E74A5 /* Main.storyboard */; };
@@ -579,6 +582,9 @@
 		471E1E64205BCF5A000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_tabbar_icon_qrcode_highlighted@3x.png"; sourceTree = "<group>"; };
 		4761CCF520BA5ABF00353E0A /* PrefixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
 		4761CCF820BA828100353E0A /* ProjectCategoryOrSayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCategoryOrSayExtension.swift; sourceTree = "<group>"; };
+		47869AE620BED7BB002668BF /* SPClassFeaturesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClassFeaturesVC.swift; sourceTree = "<group>"; };
+		47869AE720BED7BB002668BF /* SPClassFeaturesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPClassFeaturesVC.xib; sourceTree = "<group>"; };
+		47869AEA20BED87F002668BF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4790607D205983C0000E74A5 /* SwiftProjectKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProjectKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47906080205983C0000E74A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47906082205983C0000E74A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1031,6 +1037,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				47869AE520BED721002668BF /* 类的特性 */,
 				8F7D205A20BEA46700DECBE7 /* 测试kingfisher */,
 				8F7D203320BE3DA400DECBE7 /* 网络请求 */,
 				8F02841C20BBF00000CCFF65 /* 桥接 */,
@@ -1047,6 +1054,16 @@
 				4761CCF820BA828100353E0A /* ProjectCategoryOrSayExtension.swift */,
 			);
 			path = CategoryOrSayExtension;
+			sourceTree = "<group>";
+		};
+		47869AE520BED721002668BF /* 类的特性 */ = {
+			isa = PBXGroup;
+			children = (
+				47869AE620BED7BB002668BF /* SPClassFeaturesVC.swift */,
+				47869AE720BED7BB002668BF /* SPClassFeaturesVC.xib */,
+				47869AEA20BED87F002668BF /* Person.swift */,
+			);
+			path = "类的特性";
 			sourceTree = "<group>";
 		};
 		47906074205983C0000E74A5 = {
@@ -1441,6 +1458,7 @@
 				471E1E79205BCF5A000536BB /* TabBar_HomeBar@3x.png in Resources */,
 				471E1F5B205BCF5B000536BB /* ewm@3x.png in Resources */,
 				471E1E81205BCF5A000536BB /* brand@2x.png in Resources */,
+				47869AE920BED7BB002668BF /* SPClassFeaturesVC.xib in Resources */,
 				471E1F2F205BCF5B000536BB /* unSafeGuard@2x.png in Resources */,
 				471E1E80205BCF5A000536BB /* o2o_location_tag@2x.png in Resources */,
 				471E1F11205BCF5B000536BB /* 20000671_groupHome@2x.png in Resources */,
@@ -1614,6 +1632,7 @@
 				8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */,
 				47906083205983C0000E74A5 /* ViewController.swift in Sources */,
 				8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */,
+				47869AE820BED7BB002668BF /* SPClassFeaturesVC.swift in Sources */,
 				8F7D203620BE3DCD00DECBE7 /* SPQueryServeDataVC.swift in Sources */,
 				8F7D204520BE74AF00DECBE7 /* GJNetworkReachability.swift in Sources */,
 				8F7D204720BE74AF00DECBE7 /* GJNetwork.swift in Sources */,
@@ -1624,6 +1643,7 @@
 				4761CCF620BA5ABF00353E0A /* PrefixHeader.swift in Sources */,
 				8F7D203D20BE486B00DECBE7 /* SPAddressM.swift in Sources */,
 				8F02841B20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift in Sources */,
+				47869AEB20BED87F002668BF /* Person.swift in Sources */,
 				47B49A5D20694D22000A36C3 /* XPageViewController.swift in Sources */,
 				8F7D204B20BE767D00DECBE7 /* GJUtil.swift in Sources */,
 				471E1D58205BC68F000536BB /* MoneyViewController.swift in Sources */,
