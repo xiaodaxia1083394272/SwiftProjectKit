@@ -277,6 +277,9 @@
 		47869AE820BED7BB002668BF /* SPClassFeaturesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47869AE620BED7BB002668BF /* SPClassFeaturesVC.swift */; };
 		47869AE920BED7BB002668BF /* SPClassFeaturesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47869AE720BED7BB002668BF /* SPClassFeaturesVC.xib */; };
 		47869AEB20BED87F002668BF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47869AEA20BED87F002668BF /* Person.swift */; };
+		47869AEF20BF0A2A002668BF /* TestCellHeightSizeToFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47869AED20BF0A2A002668BF /* TestCellHeightSizeToFit.swift */; };
+		47869AF020BF0A2A002668BF /* TestCellHeightSizeToFit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47869AEE20BF0A2A002668BF /* TestCellHeightSizeToFit.xib */; };
+		47869AF420BF1261002668BF /* TestSizeToFitM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47869AF320BF1261002668BF /* TestSizeToFitM.swift */; };
 		47906081205983C0000E74A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47906080205983C0000E74A5 /* AppDelegate.swift */; };
 		47906083205983C0000E74A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47906082205983C0000E74A5 /* ViewController.swift */; };
 		47906086205983C0000E74A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47906084205983C0000E74A5 /* Main.storyboard */; };
@@ -585,6 +588,9 @@
 		47869AE620BED7BB002668BF /* SPClassFeaturesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClassFeaturesVC.swift; sourceTree = "<group>"; };
 		47869AE720BED7BB002668BF /* SPClassFeaturesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPClassFeaturesVC.xib; sourceTree = "<group>"; };
 		47869AEA20BED87F002668BF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		47869AED20BF0A2A002668BF /* TestCellHeightSizeToFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCellHeightSizeToFit.swift; sourceTree = "<group>"; };
+		47869AEE20BF0A2A002668BF /* TestCellHeightSizeToFit.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCellHeightSizeToFit.xib; sourceTree = "<group>"; };
+		47869AF320BF1261002668BF /* TestSizeToFitM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSizeToFitM.swift; sourceTree = "<group>"; };
 		4790607D205983C0000E74A5 /* SwiftProjectKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProjectKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47906080205983C0000E74A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47906082205983C0000E74A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1037,6 +1043,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				47869AEC20BF09CB002668BF /* tableViewCell的高度自适应 */,
 				47869AE520BED721002668BF /* 类的特性 */,
 				8F7D205A20BEA46700DECBE7 /* 测试kingfisher */,
 				8F7D203320BE3DA400DECBE7 /* 网络请求 */,
@@ -1064,6 +1071,32 @@
 				47869AEA20BED87F002668BF /* Person.swift */,
 			);
 			path = "类的特性";
+			sourceTree = "<group>";
+		};
+		47869AEC20BF09CB002668BF /* tableViewCell的高度自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				47869AF120BF0E55002668BF /* M */,
+				47869AF220BF0E56002668BF /* VM */,
+				47869AED20BF0A2A002668BF /* TestCellHeightSizeToFit.swift */,
+				47869AEE20BF0A2A002668BF /* TestCellHeightSizeToFit.xib */,
+			);
+			path = "tableViewCell的高度自适应";
+			sourceTree = "<group>";
+		};
+		47869AF120BF0E55002668BF /* M */ = {
+			isa = PBXGroup;
+			children = (
+				47869AF320BF1261002668BF /* TestSizeToFitM.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		47869AF220BF0E56002668BF /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 		47906074205983C0000E74A5 = {
@@ -1344,6 +1377,7 @@
 				471E1F1A205BCF5B000536BB /* 20000233@2x.png in Resources */,
 				471E1F0C205BCF5B000536BB /* 20000155@2x.png in Resources */,
 				471E1F4C205BCF5B000536BB /* insurance@3x.png in Resources */,
+				47869AF020BF0A2A002668BF /* TestCellHeightSizeToFit.xib in Resources */,
 				4790608B205983C0000E74A5 /* LaunchScreen.storyboard in Resources */,
 				471E1EF8205BCF5A000536BB /* 20000700_groupHome@2x.png in Resources */,
 				471E1F52205BCF5B000536BB /* line@2x.png in Resources */,
@@ -1645,6 +1679,7 @@
 				8F02841B20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift in Sources */,
 				47869AEB20BED87F002668BF /* Person.swift in Sources */,
 				47B49A5D20694D22000A36C3 /* XPageViewController.swift in Sources */,
+				47869AEF20BF0A2A002668BF /* TestCellHeightSizeToFit.swift in Sources */,
 				8F7D204B20BE767D00DECBE7 /* GJUtil.swift in Sources */,
 				471E1D58205BC68F000536BB /* MoneyViewController.swift in Sources */,
 				471E1D56205BC677000536BB /* FriendViewController.swift in Sources */,
@@ -1657,6 +1692,7 @@
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
 				471E1D52205BC632000536BB /* ReputationViewController.swift in Sources */,
 				8F02841820BBE8F000CCFF65 /* SPSwiftBlockVC.swift in Sources */,
+				47869AF420BF1261002668BF /* TestSizeToFitM.swift in Sources */,
 				8F02841420BBDCC500CCFF65 /* SPTestDelegateObject.swift in Sources */,
 				8F7D203F20BE4FF100DECBE7 /* HttpTool.swift in Sources */,
 				8F7D204920BE764C00DECBE7 /* NetWorkFile.swift in Sources */,

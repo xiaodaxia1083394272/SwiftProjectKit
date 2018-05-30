@@ -57,3 +57,38 @@ extension UIColor {
 
 }
 
+//MARK:字符串扩展（分类）
+extension NSString {
+    /*计算文字高度*/
+//    - (CGFloat)heightWithFont:(UIFont *)font maxSize:(CGSize)maxSize
+//    {
+//    NSDictionary *attrs = @{NSFontAttributeName : font};
+//    return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size.height;
+//    }
+//    func heightWithFont(font : UIFont , maxSize : CGSize) ->CGFloat{
+//
+//        return NSString.boundingRect(<#T##NSString#>)
+//    }
+    
+//    func getTextHeigh(textStr:String,font:UIFont,width:CGFloat) -> CGFloat {
+//
+//        let normalText: NSString = textStr as NSString
+//        let size = CGSize(width: width, height: 1000)
+//        let dic = NSDictionary(object: font, forKey: NSAttributedStringKey.font as NSCopying)
+//        let stringSize = normalText.boundingRectWithSize(size, options: .UsesLineFragmentOrigin, attributes: dic as? [String : Any], context:nil).size
+//        return stringSize.height
+//    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -19,8 +19,9 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "swift的委托":"SPDelegateVC",
             "swift的闭包（oc中的block）":"SPSwiftBlockVC",
             "swift桥接oc的代码":"SPBridgeVc",
-            "swift的网络请求":"SPQueryServeDataVC",
-            "swift 1.类的构造函数，2.类的属性, 3.类的属性监听器, 4.kvc赋值, 5.析构函数":"SPClassFeaturesVC"
+            "swift的网络请求（Alamofire)":"SPQueryServeDataVC",
+            "swift 1.类的构造函数，2.类的属性, 3.类的属性监听器, 4.kvc赋值, 5.析构函数":"SPClassFeaturesVC",
+            "tableViewCell高度自适应":"TestCellHeightSizeToFit"
             /*"毛玻璃":"",
             "倒计时":"PKTimeVC",
             "删除功能的图片浏览器":"",
@@ -71,7 +72,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //pss_注1.习惯写上对象的类型
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(searchCell_id)", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: searchCell_id, for: indexPath)
         cell.selectionStyle = .none
         cell.textLabel?.text = self.searchList[indexPath.row]
         cell.textLabel?.textAlignment = .center
@@ -111,7 +112,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         let tableView = UITableView(frame: self.view.bounds)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "\(searchCell_id)")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: searchCell_id)
         
         return tableView
         
