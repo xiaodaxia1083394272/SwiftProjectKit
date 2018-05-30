@@ -307,6 +307,8 @@
 		8F7D204920BE764C00DECBE7 /* NetWorkFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D204820BE764B00DECBE7 /* NetWorkFile.swift */; };
 		8F7D204B20BE767D00DECBE7 /* GJUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D204A20BE767C00DECBE7 /* GJUtil.swift */; };
 		8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D205320BE7E0200DECBE7 /* SPTestAla.swift */; };
+		8F7D205D20BEA46800DECBE7 /* SPTestKingfisherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D205B20BEA46700DECBE7 /* SPTestKingfisherVC.swift */; };
+		8F7D205E20BEA46800DECBE7 /* SPTestKingfisherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D205C20BEA46700DECBE7 /* SPTestKingfisherVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -615,6 +617,8 @@
 		8F7D204820BE764B00DECBE7 /* NetWorkFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkFile.swift; sourceTree = "<group>"; };
 		8F7D204A20BE767C00DECBE7 /* GJUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJUtil.swift; sourceTree = "<group>"; };
 		8F7D205320BE7E0200DECBE7 /* SPTestAla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestAla.swift; sourceTree = "<group>"; };
+		8F7D205B20BEA46700DECBE7 /* SPTestKingfisherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPTestKingfisherVC.swift; sourceTree = "<group>"; };
+		8F7D205C20BEA46700DECBE7 /* SPTestKingfisherVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTestKingfisherVC.xib; sourceTree = "<group>"; };
 		E857D8966CAF8B2E3D0C3DB6 /* Pods_SwiftProjectKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjectKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1027,6 +1031,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				8F7D205A20BEA46700DECBE7 /* 测试kingfisher */,
 				8F7D203320BE3DA400DECBE7 /* 网络请求 */,
 				8F02841C20BBF00000CCFF65 /* 桥接 */,
 				8F02841520BBE87700CCFF65 /* 闭包 */,
@@ -1196,6 +1201,15 @@
 				8F7D205320BE7E0200DECBE7 /* SPTestAla.swift */,
 			);
 			path = "自测";
+			sourceTree = "<group>";
+		};
+		8F7D205A20BEA46700DECBE7 /* 测试kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				8F7D205B20BEA46700DECBE7 /* SPTestKingfisherVC.swift */,
+				8F7D205C20BEA46700DECBE7 /* SPTestKingfisherVC.xib */,
+			);
+			path = "测试kingfisher";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1462,6 +1476,7 @@
 				471E1EEA205BCF5A000536BB /* 20000172_contactA@2x.png in Resources */,
 				471E1E8E205BCF5A000536BB /* phone@3x.png in Resources */,
 				471E1EFB205BCF5A000536BB /* 20000781@2x.png in Resources */,
+				8F7D205E20BEA46800DECBE7 /* SPTestKingfisherVC.xib in Resources */,
 				471E1EAF205BCF5A000536BB /* upload_image_failed@3x.png in Resources */,
 				471E1F2C205BCF5B000536BB /* 20000170_contactA@2x.png in Resources */,
 				471E1ECB205BCF5A000536BB /* merchantLoaction@3x.png in Resources */,
@@ -1558,12 +1573,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProjectKit/Pods-SwiftProjectKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -1627,6 +1644,7 @@
 				471E1D5C205BCA12000536BB /* BaseNavgationController.swift in Sources */,
 				471E1D5A205BC6A9000536BB /* CityListViewController.swift in Sources */,
 				47B49A5C20694D22000A36C3 /* XPageExtension.swift in Sources */,
+				8F7D205D20BEA46800DECBE7 /* SPTestKingfisherVC.swift in Sources */,
 				8F7D204620BE74AF00DECBE7 /* GJNetWorkTool.swift in Sources */,
 				8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */,
 			);

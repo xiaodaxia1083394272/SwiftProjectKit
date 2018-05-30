@@ -15,7 +15,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     //pss_swift中字典同级的key不能一样，这样奇葩（貌似oc可以，不过自动去掉了重复的了）
     lazy var dataDic : Dictionary<String,Any> = {
         let dataDic = [
-            "自定义textview":"",
+            "测试kingfisher":"SPTestKingfisherVC",
             "swift的委托":"SPDelegateVC",
             "swift的闭包（oc中的block）":"SPSwiftBlockVC",
             "swift桥接oc的代码":"SPBridgeVc",
