@@ -28,8 +28,12 @@ class SPSwiftBlockVC: UIViewController {
          2> 在闭包中使用成员属性
          对于闭包中的循环引用的问题：
          如果所在的类对闭包强引用了，就有必要使用weakself，并且是以可选链的方式
+         
+         pss_swift的强类型特性也是够了，
+         定个weakSelf一定要指定是那个控制器，
+         给个UIViewController还不行
          */
-        weak var weakSelf : SPSwiftBlockVC? = self//pss_swift的强类型特性也是够了，定个weakSelf一定要指定是那个控制器，给个UIViewController
+        weak var weakSelf : SPSwiftBlockVC? = self
         
         testSwiftBlcokObjcet?.loadData({ (jsonData : String) in
            

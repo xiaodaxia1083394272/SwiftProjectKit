@@ -12,13 +12,10 @@ class SPBridgeVc: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
 
     }
     
     @IBAction func clickSwiftCallOcBtn(_ sender: Any) {
-        
         
         let ocVC = SPTestBriage()
         self.navigationController?.present(ocVC, animated: true, completion: {

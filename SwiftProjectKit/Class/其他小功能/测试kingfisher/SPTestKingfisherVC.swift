@@ -9,12 +9,10 @@
 import UIKit
 import Kingfisher
 
-
 class SPTestKingfisherVC: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,9 +26,7 @@ class SPTestKingfisherVC: UIViewController {
         
         //默认图片的写法
 //        imageView.kf.setImage(with: ImageResource(downloadURL: imageURL!), placeholder: UIImage(named: "test"), options: nil, progressBlock: nil, completionHandler: nil)
-        
 
-        
     }
     
 }
