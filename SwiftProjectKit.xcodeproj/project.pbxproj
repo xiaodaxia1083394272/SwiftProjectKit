@@ -301,6 +301,11 @@
 		8F02842020BBF03200CCFF65 /* SPBridgeVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841E20BBF03200CCFF65 /* SPBridgeVc.xib */; };
 		8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F02842320BC04ED00CCFF65 /* SPTestBriage.m */; };
 		8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */; };
+		8F66F8DD20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8DC20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift */; };
+		8F66F8DF20D8B5E400D0FB0F /* HWLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8DE20D8B5E400D0FB0F /* HWLineLayout.swift */; };
+		8F66F8E720D8C21700D0FB0F /* HWCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */; };
+		8F66F8E820D8C21700D0FB0F /* HWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F66F8E620D8C21700D0FB0F /* HWCollectionViewCell.xib */; };
+		8F66F8EA20D8F29200D0FB0F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8E920D8F29200D0FB0F /* BaseTableViewController.swift */; };
 		8F7D203620BE3DCD00DECBE7 /* SPQueryServeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203420BE3DCD00DECBE7 /* SPQueryServeDataVC.swift */; };
 		8F7D203720BE3DCD00DECBE7 /* SPQueryServeDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D203520BE3DCD00DECBE7 /* SPQueryServeDataVC.xib */; };
 		8F7D203920BE3E0400DECBE7 /* SPTestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203820BE3E0400DECBE7 /* SPTestService.swift */; };
@@ -617,6 +622,11 @@
 		8F02842220BC04ED00CCFF65 /* SPTestBriage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTestBriage.h; sourceTree = "<group>"; };
 		8F02842320BC04ED00CCFF65 /* SPTestBriage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTestBriage.m; sourceTree = "<group>"; };
 		8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSwiftTestBriageObj.swift; sourceTree = "<group>"; };
+		8F66F8DC20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHorizontalScrollViewController.swift; sourceTree = "<group>"; };
+		8F66F8DE20D8B5E400D0FB0F /* HWLineLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWLineLayout.swift; sourceTree = "<group>"; };
+		8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F66F8E620D8C21700D0FB0F /* HWCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HWCollectionViewCell.xib; sourceTree = "<group>"; };
+		8F66F8E920D8F29200D0FB0F /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		8F7D203420BE3DCD00DECBE7 /* SPQueryServeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPQueryServeDataVC.swift; sourceTree = "<group>"; };
 		8F7D203520BE3DCD00DECBE7 /* SPQueryServeDataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPQueryServeDataVC.xib; sourceTree = "<group>"; };
 		8F7D203820BE3E0400DECBE7 /* SPTestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestService.swift; sourceTree = "<group>"; };
@@ -702,6 +712,7 @@
 				471E1D5B205BCA12000536BB /* BaseNavgationController.swift */,
 				471E1D4D205BC51E000536BB /* BaseViewController.swift */,
 				471E1D51205BC632000536BB /* ReputationViewController.swift */,
+				8F66F8E920D8F29200D0FB0F /* BaseTableViewController.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -1035,6 +1046,7 @@
 		471E1F68205BD214000536BB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				8F66F8DA20D8B1C800D0FB0F /* 视图布局 */,
 				471E1F69205BD214000536BB /* 其他小功能 */,
 			);
 			path = Class;
@@ -1216,6 +1228,25 @@
 				8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */,
 			);
 			path = "桥接";
+			sourceTree = "<group>";
+		};
+		8F66F8DA20D8B1C800D0FB0F /* 视图布局 */ = {
+			isa = PBXGroup;
+			children = (
+				8F66F8DB20D8B21500D0FB0F /* 水平滚动布局 */,
+			);
+			path = "视图布局";
+			sourceTree = "<group>";
+		};
+		8F66F8DB20D8B21500D0FB0F /* 水平滚动布局 */ = {
+			isa = PBXGroup;
+			children = (
+				8F66F8DC20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift */,
+				8F66F8DE20D8B5E400D0FB0F /* HWLineLayout.swift */,
+				8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */,
+				8F66F8E620D8C21700D0FB0F /* HWCollectionViewCell.xib */,
+			);
+			path = "水平滚动布局";
 			sourceTree = "<group>";
 		};
 		8F7D203320BE3DA400DECBE7 /* 网络请求 */ = {
@@ -1493,6 +1524,7 @@
 				471E1F5B205BCF5B000536BB /* ewm@3x.png in Resources */,
 				471E1E81205BCF5A000536BB /* brand@2x.png in Resources */,
 				47869AE920BED7BB002668BF /* SPClassFeaturesVC.xib in Resources */,
+				8F66F8E820D8C21700D0FB0F /* HWCollectionViewCell.xib in Resources */,
 				471E1F2F205BCF5B000536BB /* unSafeGuard@2x.png in Resources */,
 				471E1E80205BCF5A000536BB /* o2o_location_tag@2x.png in Resources */,
 				471E1F11205BCF5B000536BB /* 20000671_groupHome@2x.png in Resources */,
@@ -1666,6 +1698,7 @@
 				8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */,
 				47906083205983C0000E74A5 /* ViewController.swift in Sources */,
 				8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */,
+				8F66F8E720D8C21700D0FB0F /* HWCollectionViewCell.swift in Sources */,
 				47869AE820BED7BB002668BF /* SPClassFeaturesVC.swift in Sources */,
 				8F7D203620BE3DCD00DECBE7 /* SPQueryServeDataVC.swift in Sources */,
 				8F7D204520BE74AF00DECBE7 /* GJNetworkReachability.swift in Sources */,
@@ -1691,17 +1724,20 @@
 				47B49A60206950A2000A36C3 /* XPageBarExtension.swift in Sources */,
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
 				471E1D52205BC632000536BB /* ReputationViewController.swift in Sources */,
+				8F66F8DF20D8B5E400D0FB0F /* HWLineLayout.swift in Sources */,
 				8F02841820BBE8F000CCFF65 /* SPSwiftBlockVC.swift in Sources */,
 				47869AF420BF1261002668BF /* TestSizeToFitM.swift in Sources */,
 				8F02841420BBDCC500CCFF65 /* SPTestDelegateObject.swift in Sources */,
 				8F7D203F20BE4FF100DECBE7 /* HttpTool.swift in Sources */,
 				8F7D204920BE764C00DECBE7 /* NetWorkFile.swift in Sources */,
+				8F66F8DD20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift in Sources */,
 				8F7D203920BE3E0400DECBE7 /* SPTestService.swift in Sources */,
 				471E1D5C205BCA12000536BB /* BaseNavgationController.swift in Sources */,
 				471E1D5A205BC6A9000536BB /* CityListViewController.swift in Sources */,
 				47B49A5C20694D22000A36C3 /* XPageExtension.swift in Sources */,
 				8F7D205D20BEA46800DECBE7 /* SPTestKingfisherVC.swift in Sources */,
 				8F7D204620BE74AF00DECBE7 /* GJNetWorkTool.swift in Sources */,
+				8F66F8EA20D8F29200D0FB0F /* BaseTableViewController.swift in Sources */,
 				8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
