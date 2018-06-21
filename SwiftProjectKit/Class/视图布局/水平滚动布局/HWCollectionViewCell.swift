@@ -12,9 +12,8 @@ class HWCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var label: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
+    override func layoutSubviews() {
+        super.layoutSubviews()
         self.layer.borderWidth = 5;
         self.layer.borderColor = UIColor.white.cgColor;
         self.layer.cornerRadius = 5;
@@ -24,7 +23,6 @@ class HWCollectionViewCell: UICollectionViewCell {
         
         //2.监听属性已经发生改变：以及改变
         didSet(index){
-            
             self.label.text = index
         }
     }

@@ -42,9 +42,10 @@ class SPHorizontalScrollViewController: UIViewController,UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"cell", for: indexPath)
-//        cell.index(self.data(indexPath.item)
+        let cell : HWCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier:"cell", for: indexPath) as! HWCollectionViewCell
         
+//        cell.index = self.data[indexPath.item]
+        cell.label.text = self.data[indexPath.item]
         return cell
     }
 
