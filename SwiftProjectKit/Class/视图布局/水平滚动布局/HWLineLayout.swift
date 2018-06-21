@@ -75,8 +75,7 @@ class HWLineLayout: UICollectionViewFlowLayout {
         return array
         
     }
-    
-    
+    //MARK:这个方法主要用来调cell的偏移的
     /**
      *  控制collectionView停止滚动时所停留的最终位置
      *
@@ -85,7 +84,6 @@ class HWLineLayout: UICollectionViewFlowLayout {
      *
      *  @return collectionView停止滚动时的最终contentOffset值
      */
-    
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         
         // 计算屏幕最中间的x值
