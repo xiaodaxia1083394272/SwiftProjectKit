@@ -19,7 +19,7 @@ class BaseTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.white;
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: mainCellIdentifier)
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "fdaffajfafafaf")
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none;
     }
 
@@ -27,37 +27,33 @@ class BaseTableViewController: UITableViewController {
         
         var tempTitleArr = [String]()
         var tempNamesArr = [String]()
-        
         for arr in dataArr{
-            
             tempTitleArr.append(arr[0])
             tempNamesArr.append(arr[1])
-
         }
         self.titles = tempTitleArr
         self.classNames = tempNamesArr
-        
     }
-
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return self.titles.count;
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        
+          return self.titles.count;
+        
     }
-
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: mainCellIdentifier, for: indexPath)
-
         
+        /*
+         默认单元格样式没有 detailTextLabel 。
+         您需要使用 .Value1 或 .Subtitle 作为 UITableViewCellStyle :
+         pss_判断cell为空的写法貌似被废弃了，swift这写法真让人蛋疼
+         */
+        let cell = tableView.dequeueReusableCell(withIdentifier: mainCellIdentifier) ?? UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier:mainCellIdentifier)
+            cell.selectionStyle = UITableViewCellSelectionStyle.gray;
+            cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator;
+            cell.textLabel?.numberOfLines = 0;
         
-        cell.selectionStyle = UITableViewCellSelectionStyle.gray;
+        print(String(format:"cell的地址___%p",cell))
         var labelText = "";
         if (indexPath.row < 9) {
             
@@ -66,9 +62,7 @@ class BaseTableViewController: UITableViewController {
             labelText = "0\(indexPath.row) - \(self.titles[indexPath.row])"
         }
         cell.textLabel?.text = labelText;
-        cell.textLabel?.numberOfLines = 0;
         cell.detailTextLabel?.text = self.classNames[indexPath.row];//pss_屏
-        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator;
         return cell
     }
 
@@ -126,7 +120,10 @@ class BaseTableViewController: UITableViewController {
             let vc = rootControl?.init()
             
             vc?.title = self.titles[indexPath.row];
-            self.navigationController?.pushViewController(vc!, animated: true)
+            if vc != nil {
+              self.navigationController?.pushViewController(vc!, animated: true)
+            }
+            
         }
     }
 

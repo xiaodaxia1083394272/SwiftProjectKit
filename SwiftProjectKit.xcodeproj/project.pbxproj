@@ -285,6 +285,9 @@
 		47906086205983C0000E74A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47906084205983C0000E74A5 /* Main.storyboard */; };
 		47906088205983C0000E74A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47906087205983C0000E74A5 /* Assets.xcassets */; };
 		4790608B205983C0000E74A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47906089205983C0000E74A5 /* LaunchScreen.storyboard */; };
+		47A73F5520DB369000F8E9AF /* YFViewLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A73F5420DB369000F8E9AF /* YFViewLayoutViewController.swift */; };
+		47A73F5920DB442200F8E9AF /* SPTestOptionalValueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A73F5720DB442200F8E9AF /* SPTestOptionalValueVC.swift */; };
+		47A73F5A20DB442200F8E9AF /* SPTestOptionalValueVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47A73F5820DB442200F8E9AF /* SPTestOptionalValueVC.xib */; };
 		47B49A5A20694D22000A36C3 /* XPageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B49A5420694D22000A36C3 /* XPageBar.swift */; };
 		47B49A5B20694D22000A36C3 /* valueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B49A5620694D22000A36C3 /* valueExtension.swift */; };
 		47B49A5C20694D22000A36C3 /* XPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B49A5820694D22000A36C3 /* XPageExtension.swift */; };
@@ -603,6 +606,9 @@
 		47906087205983C0000E74A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4790608A205983C0000E74A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4790608C205983C0000E74A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47A73F5420DB369000F8E9AF /* YFViewLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFViewLayoutViewController.swift; sourceTree = "<group>"; };
+		47A73F5720DB442200F8E9AF /* SPTestOptionalValueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestOptionalValueVC.swift; sourceTree = "<group>"; };
+		47A73F5820DB442200F8E9AF /* SPTestOptionalValueVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPTestOptionalValueVC.xib; sourceTree = "<group>"; };
 		47B49A5420694D22000A36C3 /* XPageBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageBar.swift; sourceTree = "<group>"; };
 		47B49A5620694D22000A36C3 /* valueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = valueExtension.swift; sourceTree = "<group>"; };
 		47B49A5820694D22000A36C3 /* XPageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPageExtension.swift; sourceTree = "<group>"; };
@@ -1055,6 +1061,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				47A73F5620DB43EF00F8E9AF /* 可选值 */,
 				47869AEC20BF09CB002668BF /* tableViewCell的高度自适应 */,
 				47869AE520BED721002668BF /* 类的特性 */,
 				8F7D205A20BEA46700DECBE7 /* 测试kingfisher */,
@@ -1153,6 +1160,15 @@
 			path = SwiftProjectKit;
 			sourceTree = "<group>";
 		};
+		47A73F5620DB43EF00F8E9AF /* 可选值 */ = {
+			isa = PBXGroup;
+			children = (
+				47A73F5720DB442200F8E9AF /* SPTestOptionalValueVC.swift */,
+				47A73F5820DB442200F8E9AF /* SPTestOptionalValueVC.xib */,
+			);
+			path = "可选值";
+			sourceTree = "<group>";
+		};
 		47B49A49206939ED000A36C3 /* 分页控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1234,6 +1250,7 @@
 			isa = PBXGroup;
 			children = (
 				8F66F8DB20D8B21500D0FB0F /* 水平滚动布局 */,
+				47A73F5420DB369000F8E9AF /* YFViewLayoutViewController.swift */,
 			);
 			path = "视图布局";
 			sourceTree = "<group>";
@@ -1476,6 +1493,7 @@
 				471E1F0A205BCF5B000536BB /* 20000221_contactA@2x.png in Resources */,
 				471E1F2D205BCF5B000536BB /* 2014021200003129@2x.png in Resources */,
 				471E1EF2205BCF5A000536BB /* 20000152@2x.png in Resources */,
+				47A73F5A20DB442200F8E9AF /* SPTestOptionalValueVC.xib in Resources */,
 				471E1E94205BCF5A000536BB /* qiang@3x.png in Resources */,
 				471E1F21205BCF5B000536BB /* 20000219_contactB@2x.png in Resources */,
 				471E1ED0205BCF5A000536BB /* sorry_no_merchant@2x.png in Resources */,
@@ -1736,9 +1754,11 @@
 				471E1D5A205BC6A9000536BB /* CityListViewController.swift in Sources */,
 				47B49A5C20694D22000A36C3 /* XPageExtension.swift in Sources */,
 				8F7D205D20BEA46800DECBE7 /* SPTestKingfisherVC.swift in Sources */,
+				47A73F5920DB442200F8E9AF /* SPTestOptionalValueVC.swift in Sources */,
 				8F7D204620BE74AF00DECBE7 /* GJNetWorkTool.swift in Sources */,
 				8F66F8EA20D8F29200D0FB0F /* BaseTableViewController.swift in Sources */,
 				8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */,
+				47A73F5520DB369000F8E9AF /* YFViewLayoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

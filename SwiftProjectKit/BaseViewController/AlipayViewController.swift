@@ -22,8 +22,8 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "swift的网络请求（Alamofire)":"SPQueryServeDataVC",
             "swift 1.类的构造函数，2.类的属性, 3.类的属性监听器, 4.kvc赋值, 5.析构函数":"SPClassFeaturesVC",
             "tableViewCell高度自适应":"TestCellHeightSizeToFit",
-            "视图布局":"",
-            /*"毛玻璃":"",
+            "视图布局":"YFViewLayoutViewController",
+            "可选值":"SPTestOptionalValueVC",/*
             "倒计时":"PKTimeVC",
             "删除功能的图片浏览器":"",
             "友盟登录分享":"PKUMVC",
@@ -52,6 +52,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUpUI()
 
     }
