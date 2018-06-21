@@ -93,10 +93,12 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         if self.dataDic[aimStr] != nil{
             
             let className = self.dataDic[aimStr]!;
+            /*
+             依据String名字拿到控制器(添加项目名称，命名空间，不能有数字和特殊符号)
+             返回的是AnyClass？ 需要as？强转
+             控制器添加Type类型
+             */
             let jumpClassName = "SwiftProjectKit.\(String(describing: className))"
-            // 依据String名字拿到控制器(添加项目名称，命名空间，不能有数字和特殊符号)
-            // 返回的是AnyClass？ 需要as？强转
-            // 控制器添加Type类型
             let rootControl = NSClassFromString(jumpClassName) as? UIViewController.Type
             
             let vc = rootControl?.init()

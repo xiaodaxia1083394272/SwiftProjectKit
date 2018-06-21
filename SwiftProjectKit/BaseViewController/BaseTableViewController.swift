@@ -115,7 +115,9 @@ class BaseTableViewController: UITableViewController {
             
         }else {
             print("className = \(className)");
-            let rootControl = NSClassFromString(className) as? UIViewController.Type
+            
+            let jumpClassName = "SwiftProjectKit.\(String(describing: className))"
+            let rootControl = NSClassFromString(jumpClassName) as? UIViewController.Type
             
             let vc = rootControl?.init()
             
