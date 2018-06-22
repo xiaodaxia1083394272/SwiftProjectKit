@@ -7,6 +7,10 @@
 //
 
 #import "SPTestBriage.h"
+/*
+ pss_oc中调起swift的代码，关键就是在oc代码中导入这个基本固定的头问题。
+ 也就是说oc与swift混编其实就是两行代码的事情。
+ */
 #import <SwiftProjectKit-Swift.h>
 
 @interface SPTestBriage ()

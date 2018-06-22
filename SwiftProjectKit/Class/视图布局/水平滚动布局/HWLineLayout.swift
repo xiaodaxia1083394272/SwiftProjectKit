@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//pss_原理，水平布局的原理就是1，滑动的过程调整其缩放，2，修正元素的偏移，确保在中间有元素 3，一下子获取所有item的布局数组，基本这一步是必做的，区别就在于哪里写而已
 
 class HWLineLayout: UICollectionViewFlowLayout {
 

@@ -309,6 +309,25 @@
 		8F66F8E720D8C21700D0FB0F /* HWCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */; };
 		8F66F8E820D8C21700D0FB0F /* HWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F66F8E620D8C21700D0FB0F /* HWCollectionViewCell.xib */; };
 		8F66F8EA20D8F29200D0FB0F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8E920D8F29200D0FB0F /* BaseTableViewController.swift */; };
+		8F77A25C20DC89C900D0FC41 /* YFWaterflowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A25B20DC89C900D0FC41 /* YFWaterflowViewController.swift */; };
+		8F77A26320DC8A9E00D0FC41 /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F77A25F20DC8A9E00D0FC41 /* 2.plist */; };
+		8F77A26420DC8A9E00D0FC41 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F77A26020DC8A9E00D0FC41 /* 1.plist */; };
+		8F77A26520DC8A9E00D0FC41 /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F77A26120DC8A9E00D0FC41 /* 3.plist */; };
+		8F77A26720DC8AE700D0FC41 /* YFWaterflowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A26620DC8AE700D0FC41 /* YFWaterflowLayout.swift */; };
+		8F77A26C20DC8BD900D0FC41 /* YFShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A26A20DC8BD900D0FC41 /* YFShopCell.swift */; };
+		8F77A26D20DC8BD900D0FC41 /* YFShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F77A26B20DC8BD900D0FC41 /* YFShopCell.xib */; };
+		8F77A29220DCA19600D0FC41 /* YFShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A29120DCA19600D0FC41 /* YFShop.m */; };
+		8F77A2AB20DCA53A00D0FC41 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A29820DCA53A00D0FC41 /* MJPropertyType.m */; };
+		8F77A2AC20DCA53A00D0FC41 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A29B20DCA53A00D0FC41 /* NSObject+MJKeyValue.m */; };
+		8F77A2AD20DCA53A00D0FC41 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A29C20DCA53A00D0FC41 /* MJProperty.m */; };
+		8F77A2AE20DCA53A00D0FC41 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A29E20DCA53A00D0FC41 /* NSObject+MJCoding.m */; };
+		8F77A2AF20DCA53A00D0FC41 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A2A020DCA53A00D0FC41 /* MJExtensionConst.m */; };
+		8F77A2B020DCA53A00D0FC41 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A2A120DCA53A00D0FC41 /* NSObject+MJProperty.m */; };
+		8F77A2B120DCA53A00D0FC41 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A2A320DCA53A00D0FC41 /* NSObject+MJClass.m */; };
+		8F77A2B220DCA53A00D0FC41 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A2A420DCA53A00D0FC41 /* NSString+MJExtension.m */; };
+		8F77A2B320DCA53A00D0FC41 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A2A520DCA53A00D0FC41 /* MJPropertyKey.m */; };
+		8F77A2B420DCA53A00D0FC41 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F77A2A920DCA53A00D0FC41 /* Info.plist */; };
+		8F77A2B520DCA53A00D0FC41 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F77A2AA20DCA53A00D0FC41 /* MJFoundation.m */; };
 		8F7D203620BE3DCD00DECBE7 /* SPQueryServeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203420BE3DCD00DECBE7 /* SPQueryServeDataVC.swift */; };
 		8F7D203720BE3DCD00DECBE7 /* SPQueryServeDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7D203520BE3DCD00DECBE7 /* SPQueryServeDataVC.xib */; };
 		8F7D203920BE3E0400DECBE7 /* SPTestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D203820BE3E0400DECBE7 /* SPTestService.swift */; };
@@ -633,6 +652,37 @@
 		8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWCollectionViewCell.swift; sourceTree = "<group>"; };
 		8F66F8E620D8C21700D0FB0F /* HWCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HWCollectionViewCell.xib; sourceTree = "<group>"; };
 		8F66F8E920D8F29200D0FB0F /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		8F77A25B20DC89C900D0FC41 /* YFWaterflowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFWaterflowViewController.swift; sourceTree = "<group>"; };
+		8F77A25F20DC8A9E00D0FC41 /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
+		8F77A26020DC8A9E00D0FC41 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		8F77A26120DC8A9E00D0FC41 /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
+		8F77A26620DC8AE700D0FC41 /* YFWaterflowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFWaterflowLayout.swift; sourceTree = "<group>"; };
+		8F77A26A20DC8BD900D0FC41 /* YFShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFShopCell.swift; sourceTree = "<group>"; };
+		8F77A26B20DC8BD900D0FC41 /* YFShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YFShopCell.xib; sourceTree = "<group>"; };
+		8F77A29020DCA19600D0FC41 /* YFShop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFShop.h; sourceTree = "<group>"; };
+		8F77A29120DCA19600D0FC41 /* YFShop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFShop.m; sourceTree = "<group>"; };
+		8F77A29520DCA53A00D0FC41 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		8F77A29620DCA53A00D0FC41 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		8F77A29720DCA53A00D0FC41 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		8F77A29820DCA53A00D0FC41 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		8F77A29920DCA53A00D0FC41 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		8F77A29A20DCA53A00D0FC41 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		8F77A29B20DCA53A00D0FC41 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		8F77A29C20DCA53A00D0FC41 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		8F77A29D20DCA53A00D0FC41 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		8F77A29E20DCA53A00D0FC41 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		8F77A29F20DCA53A00D0FC41 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		8F77A2A020DCA53A00D0FC41 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		8F77A2A120DCA53A00D0FC41 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		8F77A2A220DCA53A00D0FC41 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		8F77A2A320DCA53A00D0FC41 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		8F77A2A420DCA53A00D0FC41 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		8F77A2A520DCA53A00D0FC41 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		8F77A2A620DCA53A00D0FC41 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		8F77A2A720DCA53A00D0FC41 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		8F77A2A820DCA53A00D0FC41 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		8F77A2A920DCA53A00D0FC41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F77A2AA20DCA53A00D0FC41 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
 		8F7D203420BE3DCD00DECBE7 /* SPQueryServeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPQueryServeDataVC.swift; sourceTree = "<group>"; };
 		8F7D203520BE3DCD00DECBE7 /* SPQueryServeDataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPQueryServeDataVC.xib; sourceTree = "<group>"; };
 		8F7D203820BE3E0400DECBE7 /* SPTestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTestService.swift; sourceTree = "<group>"; };
@@ -1236,6 +1286,7 @@
 		8F02841C20BBF00000CCFF65 /* 桥接 */ = {
 			isa = PBXGroup;
 			children = (
+				8F77A29320DCA53A00D0FC41 /* oc中的第三方库，cocoapod导入会识别不了，只能手动导入 */,
 				8F02841D20BBF03200CCFF65 /* SPBridgeVc.swift */,
 				8F02841E20BBF03200CCFF65 /* SPBridgeVc.xib */,
 				8F02842220BC04ED00CCFF65 /* SPTestBriage.h */,
@@ -1249,6 +1300,7 @@
 		8F66F8DA20D8B1C800D0FB0F /* 视图布局 */ = {
 			isa = PBXGroup;
 			children = (
+				8F77A25A20DC898300D0FC41 /* 瀑布流布局 */,
 				8F66F8DB20D8B21500D0FB0F /* 水平滚动布局 */,
 				47A73F5420DB369000F8E9AF /* YFViewLayoutViewController.swift */,
 			);
@@ -1264,6 +1316,83 @@
 				8F66F8E620D8C21700D0FB0F /* HWCollectionViewCell.xib */,
 			);
 			path = "水平滚动布局";
+			sourceTree = "<group>";
+		};
+		8F77A25A20DC898300D0FC41 /* 瀑布流布局 */ = {
+			isa = PBXGroup;
+			children = (
+				8F77A25D20DC8A9E00D0FC41 /* Shop */,
+				8F77A25E20DC8A9E00D0FC41 /* SupportingFiles */,
+				8F77A26220DC8A9E00D0FC41 /* Waterflow */,
+				8F77A25B20DC89C900D0FC41 /* YFWaterflowViewController.swift */,
+			);
+			path = "瀑布流布局";
+			sourceTree = "<group>";
+		};
+		8F77A25D20DC8A9E00D0FC41 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				8F77A26A20DC8BD900D0FC41 /* YFShopCell.swift */,
+				8F77A26B20DC8BD900D0FC41 /* YFShopCell.xib */,
+				8F77A29020DCA19600D0FC41 /* YFShop.h */,
+				8F77A29120DCA19600D0FC41 /* YFShop.m */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		8F77A25E20DC8A9E00D0FC41 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8F77A25F20DC8A9E00D0FC41 /* 2.plist */,
+				8F77A26020DC8A9E00D0FC41 /* 1.plist */,
+				8F77A26120DC8A9E00D0FC41 /* 3.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8F77A26220DC8A9E00D0FC41 /* Waterflow */ = {
+			isa = PBXGroup;
+			children = (
+				8F77A26620DC8AE700D0FC41 /* YFWaterflowLayout.swift */,
+			);
+			path = Waterflow;
+			sourceTree = "<group>";
+		};
+		8F77A29320DCA53A00D0FC41 /* oc中的第三方库，cocoapod导入会识别不了，只能手动导入 */ = {
+			isa = PBXGroup;
+			children = (
+				8F77A29420DCA53A00D0FC41 /* MJExtension */,
+			);
+			path = "oc中的第三方库，cocoapod导入会识别不了，只能手动导入";
+			sourceTree = "<group>";
+		};
+		8F77A29420DCA53A00D0FC41 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8F77A29520DCA53A00D0FC41 /* MJPropertyKey.h */,
+				8F77A29620DCA53A00D0FC41 /* NSObject+MJClass.h */,
+				8F77A29720DCA53A00D0FC41 /* NSString+MJExtension.h */,
+				8F77A29820DCA53A00D0FC41 /* MJPropertyType.m */,
+				8F77A29920DCA53A00D0FC41 /* NSObject+MJProperty.h */,
+				8F77A29A20DCA53A00D0FC41 /* MJExtensionConst.h */,
+				8F77A29B20DCA53A00D0FC41 /* NSObject+MJKeyValue.m */,
+				8F77A29C20DCA53A00D0FC41 /* MJProperty.m */,
+				8F77A29D20DCA53A00D0FC41 /* MJFoundation.h */,
+				8F77A29E20DCA53A00D0FC41 /* NSObject+MJCoding.m */,
+				8F77A29F20DCA53A00D0FC41 /* MJExtension.h */,
+				8F77A2A020DCA53A00D0FC41 /* MJExtensionConst.m */,
+				8F77A2A120DCA53A00D0FC41 /* NSObject+MJProperty.m */,
+				8F77A2A220DCA53A00D0FC41 /* MJPropertyType.h */,
+				8F77A2A320DCA53A00D0FC41 /* NSObject+MJClass.m */,
+				8F77A2A420DCA53A00D0FC41 /* NSString+MJExtension.m */,
+				8F77A2A520DCA53A00D0FC41 /* MJPropertyKey.m */,
+				8F77A2A620DCA53A00D0FC41 /* MJProperty.h */,
+				8F77A2A720DCA53A00D0FC41 /* NSObject+MJKeyValue.h */,
+				8F77A2A820DCA53A00D0FC41 /* NSObject+MJCoding.h */,
+				8F77A2A920DCA53A00D0FC41 /* Info.plist */,
+				8F77A2AA20DCA53A00D0FC41 /* MJFoundation.m */,
+			);
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 		8F7D203320BE3DA400DECBE7 /* 网络请求 */ = {
@@ -1426,6 +1555,7 @@
 				471E1F0C205BCF5B000536BB /* 20000155@2x.png in Resources */,
 				471E1F4C205BCF5B000536BB /* insurance@3x.png in Resources */,
 				47869AF020BF0A2A002668BF /* TestCellHeightSizeToFit.xib in Resources */,
+				8F77A2B420DCA53A00D0FC41 /* Info.plist in Resources */,
 				4790608B205983C0000E74A5 /* LaunchScreen.storyboard in Resources */,
 				471E1EF8205BCF5A000536BB /* 20000700_groupHome@2x.png in Resources */,
 				471E1F52205BCF5B000536BB /* line@2x.png in Resources */,
@@ -1455,8 +1585,10 @@
 				471E1F32205BCF5B000536BB /* balance@2x.png in Resources */,
 				471E1F12205BCF5B000536BB /* 20000161@2x.png in Resources */,
 				471E1EB7205BCF5A000536BB /* o2o_location@2x.png in Resources */,
+				8F77A26320DC8A9E00D0FC41 /* 2.plist in Resources */,
 				471E1EC0205BCF5A000536BB /* dot@2x.png in Resources */,
 				471E1EC2205BCF5A000536BB /* location@3x.png in Resources */,
+				8F77A26520DC8A9E00D0FC41 /* 3.plist in Resources */,
 				471E1F44205BCF5B000536BB /* yulebao@2x.png in Resources */,
 				471E1F5F205BCF5B000536BB /* qrcode_tabbar_icon_barcode_highlighted@2x.png in Resources */,
 				471E1F62205BCF5B000536BB /* qrcode_scanline_barcode@2x.png in Resources */,
@@ -1531,6 +1663,7 @@
 				471E1E65205BCF5A000536BB /* scanStatic@2x.png in Resources */,
 				471E1E78205BCF5A000536BB /* TabBar_HomeBar@2x.png in Resources */,
 				471E1F47205BCF5B000536BB /* credit@2x.png in Resources */,
+				8F77A26420DC8A9E00D0FC41 /* 1.plist in Resources */,
 				471E1F30205BCF5B000536BB /* balance@3x.png in Resources */,
 				471E1F61205BCF5B000536BB /* qrcode_tabbar_icon_qrcode_highlighted@2x.png in Resources */,
 				471E1F36205BCF5B000536BB /* fixed@3x.png in Resources */,
@@ -1607,6 +1740,7 @@
 				471E1F57205BCF5B000536BB /* qrcode_tabbar_icon_qrcode@3x.png in Resources */,
 				471E1E7C205BCF5A000536BB /* all_people_header_500@2x.png in Resources */,
 				471E1F1E205BCF5B000536BB /* 20000177@2x.png in Resources */,
+				8F77A26D20DC8BD900D0FC41 /* YFShopCell.xib in Resources */,
 				471E1EF5205BCF5A000536BB /* 20000123@2x.png in Resources */,
 				471E1E68205BCF5A000536BB /* add_friend@2x.png in Resources */,
 				471E1E7A205BCF5A000536BB /* TabBar_Friends_Sel@2x.png in Resources */,
@@ -1713,8 +1847,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F77A2AD20DCA53A00D0FC41 /* MJProperty.m in Sources */,
 				8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */,
 				47906083205983C0000E74A5 /* ViewController.swift in Sources */,
+				8F77A2B520DCA53A00D0FC41 /* MJFoundation.m in Sources */,
 				8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */,
 				8F66F8E720D8C21700D0FB0F /* HWCollectionViewCell.swift in Sources */,
 				47869AE820BED7BB002668BF /* SPClassFeaturesVC.swift in Sources */,
@@ -1723,39 +1859,51 @@
 				8F7D204720BE74AF00DECBE7 /* GJNetwork.swift in Sources */,
 				47B49A5B20694D22000A36C3 /* valueExtension.swift in Sources */,
 				4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */,
+				8F77A2AF20DCA53A00D0FC41 /* MJExtensionConst.m in Sources */,
 				471E1D4E205BC51E000536BB /* BaseViewController.swift in Sources */,
 				47906081205983C0000E74A5 /* AppDelegate.swift in Sources */,
 				4761CCF620BA5ABF00353E0A /* PrefixHeader.swift in Sources */,
 				8F7D203D20BE486B00DECBE7 /* SPAddressM.swift in Sources */,
+				8F77A2B220DCA53A00D0FC41 /* NSString+MJExtension.m in Sources */,
 				8F02841B20BBEA7700CCFF65 /* SPTestSwiftBlcokObjcet.swift in Sources */,
 				47869AEB20BED87F002668BF /* Person.swift in Sources */,
 				47B49A5D20694D22000A36C3 /* XPageViewController.swift in Sources */,
+				8F77A25C20DC89C900D0FC41 /* YFWaterflowViewController.swift in Sources */,
 				47869AEF20BF0A2A002668BF /* TestCellHeightSizeToFit.swift in Sources */,
 				8F7D204B20BE767D00DECBE7 /* GJUtil.swift in Sources */,
 				471E1D58205BC68F000536BB /* MoneyViewController.swift in Sources */,
+				8F77A2B020DCA53A00D0FC41 /* NSObject+MJProperty.m in Sources */,
 				471E1D56205BC677000536BB /* FriendViewController.swift in Sources */,
 				47B49A5A20694D22000A36C3 /* XPageBar.swift in Sources */,
+				8F77A29220DCA19600D0FC41 /* YFShop.m in Sources */,
 				8F02841120BBAC1600CCFF65 /* SPDelegateVC.swift in Sources */,
 				8F02841F20BBF03200CCFF65 /* SPBridgeVc.swift in Sources */,
 				8F7D203B20BE419200DECBE7 /* SSLoginNetWorkRequest.swift in Sources */,
+				8F77A26720DC8AE700D0FC41 /* YFWaterflowLayout.swift in Sources */,
+				8F77A2AC20DCA53A00D0FC41 /* NSObject+MJKeyValue.m in Sources */,
 				471E1D4C205BC4C9000536BB /* WMTabbarController.swift in Sources */,
+				8F77A2B120DCA53A00D0FC41 /* NSObject+MJClass.m in Sources */,
 				47B49A60206950A2000A36C3 /* XPageBarExtension.swift in Sources */,
+				8F77A2AB20DCA53A00D0FC41 /* MJPropertyType.m in Sources */,
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
 				471E1D52205BC632000536BB /* ReputationViewController.swift in Sources */,
 				8F66F8DF20D8B5E400D0FB0F /* HWLineLayout.swift in Sources */,
 				8F02841820BBE8F000CCFF65 /* SPSwiftBlockVC.swift in Sources */,
 				47869AF420BF1261002668BF /* TestSizeToFitM.swift in Sources */,
+				8F77A26C20DC8BD900D0FC41 /* YFShopCell.swift in Sources */,
 				8F02841420BBDCC500CCFF65 /* SPTestDelegateObject.swift in Sources */,
 				8F7D203F20BE4FF100DECBE7 /* HttpTool.swift in Sources */,
 				8F7D204920BE764C00DECBE7 /* NetWorkFile.swift in Sources */,
 				8F66F8DD20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift in Sources */,
 				8F7D203920BE3E0400DECBE7 /* SPTestService.swift in Sources */,
 				471E1D5C205BCA12000536BB /* BaseNavgationController.swift in Sources */,
+				8F77A2B320DCA53A00D0FC41 /* MJPropertyKey.m in Sources */,
 				471E1D5A205BC6A9000536BB /* CityListViewController.swift in Sources */,
 				47B49A5C20694D22000A36C3 /* XPageExtension.swift in Sources */,
 				8F7D205D20BEA46800DECBE7 /* SPTestKingfisherVC.swift in Sources */,
 				47A73F5920DB442200F8E9AF /* SPTestOptionalValueVC.swift in Sources */,
 				8F7D204620BE74AF00DECBE7 /* GJNetWorkTool.swift in Sources */,
+				8F77A2AE20DCA53A00D0FC41 /* NSObject+MJCoding.m in Sources */,
 				8F66F8EA20D8F29200D0FB0F /* BaseTableViewController.swift in Sources */,
 				8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */,
 				47A73F5520DB369000F8E9AF /* YFViewLayoutViewController.swift in Sources */,
