@@ -14,7 +14,7 @@ extension UIColor {
     //颜色16进制
     
     //MARK:16进制颜色  "#00FF07"
-    public func hexCOLOR(_ hexString: String) -> UIColor{
+    public class func hexCOLOR(_ hexString: String) -> UIColor{
 
         var cString: String = hexString.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
         //swift4.0字符串的长度直接用count就行了
@@ -80,6 +80,8 @@ extension NSString {
 //    }
     
 }
+
+
 
 
 

@@ -11,3 +11,4 @@
 //pss_重，oc 中的第三方库，在swift中不能用cocoapod导入，会识别不了，要手动导入。
 #import "MJExtension.h"
 #import "YFShop.h"
+#import "UIScrollView+FXRefresh.h"
