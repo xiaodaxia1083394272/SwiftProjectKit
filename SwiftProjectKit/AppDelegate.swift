@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-//snn_吐槽，pss_重，原理，赞
+//snn_吐槽，pss_重，原理，赞,核
     var window: UIWindow?
 
 
