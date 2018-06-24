@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4711080F20DF98760042A3B2 /* SPGCDTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4711080D20DF98760042A3B2 /* SPGCDTest.swift */; };
+		4711081020DF98760042A3B2 /* SPGCDTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4711080E20DF98760042A3B2 /* SPGCDTest.xib */; };
 		471E1D4C205BC4C9000536BB /* WMTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E1D4B205BC4C9000536BB /* WMTabbarController.swift */; };
 		471E1D4E205BC51E000536BB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E1D4D205BC51E000536BB /* BaseViewController.swift */; };
 		471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E1D4F205BC61A000536BB /* AlipayViewController.swift */; };
@@ -366,6 +368,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4711080D20DF98760042A3B2 /* SPGCDTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPGCDTest.swift; sourceTree = "<group>"; };
+		4711080E20DF98760042A3B2 /* SPGCDTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPGCDTest.xib; sourceTree = "<group>"; };
 		471E1D4B205BC4C9000536BB /* WMTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMTabbarController.swift; sourceTree = "<group>"; };
 		471E1D4D205BC51E000536BB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		471E1D4F205BC61A000536BB /* AlipayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlipayViewController.swift; sourceTree = "<group>"; };
@@ -792,6 +796,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4711080C20DF98570042A3B2 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				4711080D20DF98760042A3B2 /* SPGCDTest.swift */,
+				4711080E20DF98760042A3B2 /* SPGCDTest.xib */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		471E1D45205BC47E000536BB /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1174,6 +1187,7 @@
 		471E1F69205BD214000536BB /* 其他小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				4711080C20DF98570042A3B2 /* GCD */,
 				47A73F5620DB43EF00F8E9AF /* 可选值 */,
 				47869AEC20BF09CB002668BF /* tableViewCell的高度自适应 */,
 				47869AE520BED721002668BF /* 类的特性 */,
@@ -1803,6 +1817,7 @@
 				471E1ED3205BCF5A000536BB /* promo-title@2x.png in Resources */,
 				471E1F45205BCF5B000536BB /* inSafeGuard@2x.png in Resources */,
 				471E1F03205BCF5A000536BB /* 20000224_contactA@2x.png in Resources */,
+				4711081020DF98760042A3B2 /* SPGCDTest.xib in Resources */,
 				471E1E8F205BCF5A000536BB /* arrow_expand@2x.png in Resources */,
 				8F02842020BBF03200CCFF65 /* SPBridgeVc.xib in Resources */,
 				471E1EE6205BCF5A000536BB /* 88886666_contactA@2x.png in Resources */,
@@ -2030,6 +2045,7 @@
 				8F106BB620DE4B8F00BF936D /* UIScrollView+MJExtension.m in Sources */,
 				8F7D204720BE74AF00DECBE7 /* GJNetwork.swift in Sources */,
 				47B49A5B20694D22000A36C3 /* valueExtension.swift in Sources */,
+				4711080F20DF98760042A3B2 /* SPGCDTest.swift in Sources */,
 				4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */,
 				8FA0DBEB20DE177F0044EBCE /* MJExtensionConst.m in Sources */,
 				8F106BC420DE4B8F00BF936D /* MJRefreshBackFooter.m in Sources */,

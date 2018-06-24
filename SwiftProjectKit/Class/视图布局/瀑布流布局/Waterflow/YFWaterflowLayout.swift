@@ -51,8 +51,8 @@ class YFWaterflowLayout: UICollectionViewFlowLayout {
     
     weak var delegate : YFWaterflowLayoutDelegate?
     /** 存放每一列的最大Y值(整体高度) */
-    var maxYs : [CGFloat]!
-    var attrsArray : [UICollectionViewLayoutAttributes]!
+    var maxYs = [CGFloat]()
+    var attrsArray = [UICollectionViewLayoutAttributes]()
     
 }
 
@@ -179,22 +179,22 @@ extension YFWaterflowLayout{
 //    0>
     //MARK: - 私有方法(通过代理获得数字)
     func maxColumns() -> CGFloat {
-        return CGFloat((delegate?.maxColumnsInWaterflowLayout?(self))!)
+//        return CGFloat((delegate?.maxColumnsInWaterflowLayout?(self))!)
        return YFDefaultMaxColumns;
     }
     
     func rowMargin() -> CGFloat {
-        return (delegate?.rowMarginInWaterflowLayout?(self))!
+//        return (delegate?.rowMarginInWaterflowLayout?(self))!
         return YFDefaultRowMargin;
     }
 
     func columnMargin() -> CGFloat {
-        return (delegate?.columnMarginInWaterflowLayout?(self))!
+//        return (delegate?.columnMarginInWaterflowLayout?(self))!
         return YFDefaultColumnMargin;
     }
 
     func insets() -> UIEdgeInsets {
-        return (delegate?.insetsInWaterflowLayout?(self))!
+//        return (delegate?.insetsInWaterflowLayout?(self))!
         return YFDefaultInsets;
     }
 }

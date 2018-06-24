@@ -8,7 +8,6 @@
 
 import UIKit
 //pss_3.首页
-
 class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
     let searchCell_id  = "searchCell_id"
     //MARK:数据源
@@ -18,6 +17,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "测试kingfisher":"SPTestKingfisherVC",
             "swift的委托":"SPDelegateVC",
             "swift的闭包（oc中的block）":"SPSwiftBlockVC",
+            "swift中的GCD":"SPGCDTest",
             "swift桥接oc的代码":"SPBridgeVc",
             "swift的网络请求（Alamofire)":"SPQueryServeDataVC",
             "swift 1.类的构造函数，2.类的属性, 3.类的属性监听器, 4.kvc赋值, 5.析构函数":"SPClassFeaturesVC",
@@ -52,46 +52,36 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpUI()
-
     }
     //MARK:---------设置UI------
     func setUpUI(){
-        
         view.addSubview(tableView)
         self.navigationItem.titleView = self.textField
-
     }
     
     //MARK:-----tableViewDelegateAndDatasource
-    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        
         return self.searchList.count
     }
-    
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //pss_注1.习惯写上对象的类型
         let cell = tableView.dequeueReusableCell(withIdentifier: searchCell_id, for: indexPath)
         cell.selectionStyle = .none
         cell.textLabel?.text = self.searchList[indexPath.row]
-        cell.textLabel?.textAlignment = .center
         cell.textLabel?.font = kFont(13)
         cell.textLabel?.numberOfLines = 0
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let aimStr = self.searchList[indexPath.row];
-
         //字符串判断为空，跟oc是不一样的，注意了
         if aimStr.isEmpty{
             return
         }
         if self.dataDic[aimStr] != nil{
-            
             let className = self.dataDic[aimStr]!;
             /*
              依据String名字拿到控制器(添加项目名称，命名空间，不能有数字和特殊符号)
@@ -100,13 +90,9 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
              */
             let jumpClassName = "SwiftProjectKit.\(String(describing: className))"
             let rootControl = NSClassFromString(jumpClassName) as? UIViewController.Type
-            
             let vc = rootControl?.init()
-            
             self.navigationController?.pushViewController(vc!, animated: true)
-            
         }
-
     }
     
     //MARK:---------懒加载------
@@ -116,7 +102,6 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: searchCell_id)
-        
         return tableView
         
         }()
@@ -126,8 +111,6 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         textField.delegate = self
         textField.backgroundColor = kYellowColor
         textField.placeholder = "搜索关键字"
-
-        
         return textField
     }()
     
@@ -143,17 +126,12 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         
         return searchList
     }()
-    
 }
 
 //MARK:扩展
 extension AlipayViewController{
-
     //
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool{
-        
-        
-        
         return true
     }
 

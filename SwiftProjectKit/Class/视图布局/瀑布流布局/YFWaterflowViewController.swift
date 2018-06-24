@@ -34,8 +34,32 @@ class YFWaterflowViewController: UIViewController,UICollectionViewDataSource,UIC
         collectionView?.register(UINib(nibName: "YFShopCell", bundle:nil), forCellWithReuseIdentifier:CellId)
         view.addSubview(self.collectionView!)
         
+        self.collectionView?.addPullDownReload(withTarget: self, action: #selector(YFWaterflowViewController.loadNewShops))
+        self.collectionView?.addPullUpLoadMore(withTarget: self, action:#selector(YFWaterflowViewController.loadMoreShops))
+        
+
     }
     
+}
+
+extension YFWaterflowViewController{
+  
+    @objc func loadNewShops(){
+        
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+////           let newShops = YFShop.mj_objectArray(withFilename: "2.plist") as! [YFShop]
+////            [self.shops insertObjects:newShops atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, newShops.count)]];
+////            [self.collectionView reloadData];
+////
+////            // stop refresh
+////            [self.collectionView endLoad];
+//            });
+    
+    }
+    
+    @objc func loadMoreShops(){
+        
+    }
 }
 
 extension YFWaterflowViewController{
