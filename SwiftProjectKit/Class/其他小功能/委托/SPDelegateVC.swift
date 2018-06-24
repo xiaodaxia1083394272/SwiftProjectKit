@@ -27,7 +27,7 @@ class SPDelegateVC: UIViewController,BuyTicketDelegate {
         testDelegateObj.goToBeijing()
     }
     
-    //3.MARK:指定委托的对象，swift直接就不用，就是这么任性
+    //3.MARK:指定委托的对象
     func buyTicket(testCallBack:String){
        
        print("\(testCallBack)")

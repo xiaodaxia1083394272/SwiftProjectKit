@@ -12,7 +12,11 @@ class FriendViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let a = ["7","5","6"]
+        var b = ["1","2","3"]
+        let c = b
+        b = a + c
+        print("\(c)")
     }
 
 
