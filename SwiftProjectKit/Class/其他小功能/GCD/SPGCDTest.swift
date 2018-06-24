@@ -124,6 +124,10 @@ class SPGCDTest: UIViewController {
          */
     }
     
+    func test4(){
+        //MARK:DispatchWorkItem是用于帮助DispatchQueue来执行列队中的任务(oc 中可没有这东西）
+    }
+    
     func test(){
         //MARK: 常见使用
         //1.异步执行回主线程写法

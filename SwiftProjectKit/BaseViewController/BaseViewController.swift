@@ -31,11 +31,12 @@ class BaseViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         //pss_疑
         if (self.isKind(of: AlipayViewController.self)||self.isKind(of:ReputationViewController.self)||self.isKind(of:FriendViewController.self)||self.isKind(of:MoneyViewController.self)==true){
-            let friendItem = UIBarButtonItem(image: UIImage(named: "user"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(showAddressBook))
-            let searchItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: self, action: #selector(searchAction))
-            let addItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(addAction))
-            
-            self.navigationItem.rightBarButtonItems = [searchItem,friendItem,addItem]
+            //基类加右上角按钮
+//            let friendItem = UIBarButtonItem(image: UIImage(named: "user"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(showAddressBook))
+//            let searchItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: self, action: #selector(searchAction))
+//            let addItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(addAction))
+//
+//            self.navigationItem.rightBarButtonItems = [searchItem,friendItem,addItem]
         }
     }
 

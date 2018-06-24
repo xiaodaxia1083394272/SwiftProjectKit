@@ -61,11 +61,15 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     }
     
     //MARK:-----tableViewDelegateAndDatasource
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return self.searchList.count
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return kFitH(60)
+    }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //pss_注1.习惯写上对象的类型
         let cell = tableView.dequeueReusableCell(withIdentifier: searchCell_id, for: indexPath)
         cell.selectionStyle = .none
@@ -75,7 +79,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let aimStr = self.searchList[indexPath.row];
         //字符串判断为空，跟oc是不一样的，注意了
         if aimStr.isEmpty{
@@ -109,8 +113,10 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     fileprivate lazy var textField : UITextField = {
         let textField = UITextField(frame:CGRect(x: 0, y: 0, width: kFitW(200), height: kFitH(30)))
         textField.delegate = self
-        textField.backgroundColor = kYellowColor
         textField.placeholder = "搜索关键字"
+        textField.textColor = kWhiteColor;
+        textField.setValue(kWhiteColor, forKeyPath: "_placeholderLabel.textColor")
+        textField.textAlignment = .center
         return textField
     }()
     
@@ -121,9 +127,7 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     }()
         
     fileprivate lazy var searchList : [String] = {
-        
         var searchList = self.functionKitList
-        
         return searchList
     }()
 }

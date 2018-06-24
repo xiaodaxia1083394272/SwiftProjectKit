@@ -17,7 +17,7 @@ class WMTabbarController: UITabBarController {
     func creatSubViewControllers(){
         //pss_初始化tabbar
         let aliNav = BaseNavgationController(rootViewController:aliPay)
-        let aliItem = UITabBarItem.init(title: "首页", image: UIImage.init(named: "TabBar_HomeBar"), selectedImage: UIImage.init(named: "TabBar_HomeBar_Sel"))
+        let aliItem = UITabBarItem.init(title: "首页", image: UIImage.init(named: "TabBar_Assets"), selectedImage: UIImage.init(named: "TabBar_Assets_Sel"))
         aliNav.tabBarItem = aliItem
         
         let reputationNav = BaseNavgationController(rootViewController:reputationVC)
@@ -42,21 +42,4 @@ class WMTabbarController: UITabBarController {
         //创建tabbar的子控制器
         self.creatSubViewControllers()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
