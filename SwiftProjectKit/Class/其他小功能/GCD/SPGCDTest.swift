@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//pss_参考：
+//pss_参考：https://blog.csdn.net/longshihua/article/details/79756676
 class SPGCDTest: UIViewController {
 
     override func viewDidLoad() {
