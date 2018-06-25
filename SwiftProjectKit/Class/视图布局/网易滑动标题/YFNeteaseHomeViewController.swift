@@ -35,6 +35,7 @@ class YFNeteaseHomeViewController: UIViewController,UIScrollViewDelegate {
 
         contentsScrollView = UIScrollView(frame: CGRect(x: 0, y: self.labelsScrollView.frame.maxY, width: kScreenW, height: kScreenH - self.labelsScrollView.frame.size.height))
         contentsScrollView.backgroundColor = kGreenColor
+        contentsScrollView.delegate = self
         self.view.addSubview(contentsScrollView)
         
         // 初始化子控制器
@@ -122,7 +123,6 @@ extension YFNeteaseHomeViewController{
             switchChildVc(index!)
         }
     }
-    
     /**
      *  切换子控制器
      *
@@ -132,14 +132,6 @@ extension YFNeteaseHomeViewController{
        
         // 添加index位置对应的控制器
         let newChildVc : UIViewController? = self.childViewControllers[index]
-        if newChildVc?.view.subviews == nil{
-            newChildVc?.view.frame.origin.y = 0
-            newChildVc?.view.frame.size.width = self.contentsScrollView.frame.size.width
-            newChildVc?.view.frame.size.height = self.contentsScrollView.frame.size.height;
-            newChildVc?.view.frame.origin.x = CGFloat(index) * (newChildVc?.view.frame.size.width)!
-            self.contentsScrollView.addSubview((newChildVc?.view)!)
-        }
-
         // 滚动到index控制器对应的位置
         self.contentsScrollView .setContentOffset(CGPoint(x: (newChildVc?.view.frame.origin.x)!, y: 0), animated: true)
         
@@ -156,10 +148,11 @@ extension YFNeteaseHomeViewController{
     }
     //MARK:UIScrollViewDelegate
     /**
-     *  当scrollView减速完毕时调用
+     *  当scrollView不触屏的时候调用
      */
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let index = scrollView.contentOffset.x / scrollView.frame.size.width
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        let index = round(scrollView.contentOffset.x / scrollView.frame.size.width)
         let labelButton : YFHomeLabelButton = self.labelsScrollView.subviews[Int(index)] as! YFHomeLabelButton
         self.labelClick(labelButton: labelButton)
     }
@@ -173,12 +166,9 @@ extension YFNeteaseHomeViewController{
         let twoIndex = NSInteger(oneIndex + 1)
         let twoPercent = value - CGFloat(oneIndex)
         let onePercent = 1 - twoPercent
-        
         let oneButton : YFHomeLabelButton  = self.labelsScrollView.subviews[oneIndex] as! YFHomeLabelButton
         oneButton.adjust(onePercent)
-        
         if (twoIndex < self.labelsScrollView.subviews.count) {
-            
             let twoButton : YFHomeLabelButton  = self.labelsScrollView.subviews[twoIndex] as! YFHomeLabelButton
             twoButton.adjust(twoPercent)
         }
