@@ -23,7 +23,8 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "swift 1.类的构造函数，2.类的属性, 3.类的属性监听器, 4.kvc赋值, 5.析构函数":"SPClassFeaturesVC",
             "tableViewCell高度自适应":"TestCellHeightSizeToFit",
             "视图布局":"YFViewLayoutViewController",
-            "可选值":"SPTestOptionalValueVC",/*
+            "可选值":"SPTestOptionalValueVC",
+            "视图切换":"YFViewTransitionViewController",/*
             "倒计时":"PKTimeVC",
             "删除功能的图片浏览器":"",
             "友盟登录分享":"PKUMVC",
@@ -34,7 +35,6 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "oc与web的交互":"OCAndWebInteractionVC",
             "按钮":"YFButtonViewController",
             "标签":"YFLabelViewController",
-            "视图切换":"YFViewTransitionViewController",
             "零散知识点":"YFKnowledgeViewController",
             "小项目展示":"YFLittleProjectViewController",
             "动画集合":"YFAnimationsViewController",

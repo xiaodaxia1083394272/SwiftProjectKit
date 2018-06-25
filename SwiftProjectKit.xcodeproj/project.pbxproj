@@ -274,6 +274,18 @@
 		471E1F63205BCF5B000536BB /* qrcode_button_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471E1E62205BCF5A000536BB /* qrcode_button_background@2x.png */; };
 		471E1F64205BCF5B000536BB /* qrcode_scanline_barcode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471E1E63205BCF5A000536BB /* qrcode_scanline_barcode@3x.png */; };
 		471E1F65205BCF5B000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471E1E64205BCF5A000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png */; };
+		474016E220E12F0B008BF749 /* YFViewTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474016E120E12F0B008BF749 /* YFViewTransitionViewController.swift */; };
+		474016ED20E13129008BF749 /* photo_sample_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 474016E620E13129008BF749 /* photo_sample_02.png */; };
+		474016EE20E13129008BF749 /* photo_sample_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 474016E720E13129008BF749 /* photo_sample_03.png */; };
+		474016EF20E13129008BF749 /* photo_sample_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 474016E820E13129008BF749 /* photo_sample_01.png */; };
+		474016F020E13129008BF749 /* photo_sample_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 474016E920E13129008BF749 /* photo_sample_04.png */; };
+		474016F120E13129008BF749 /* photo_sample_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 474016EA20E13129008BF749 /* photo_sample_05.png */; };
+		474016F220E13129008BF749 /* photo_sample_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 474016EB20E13129008BF749 /* photo_sample_07.png */; };
+		474016F320E13129008BF749 /* photo_sample_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 474016EC20E13129008BF749 /* photo_sample_06.png */; };
+		474016FA20E131F4008BF749 /* YFDraggableCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474016F720E131F4008BF749 /* YFDraggableCardViewController.swift */; };
+		474016FB20E131F4008BF749 /* YSLDraggableCardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474016F920E131F4008BF749 /* YSLDraggableCardContainer.swift */; };
+		474016FD20E13226008BF749 /* YSLCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474016FC20E13226008BF749 /* YSLCardView.swift */; };
+		474016FF20E1323A008BF749 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474016FE20E1323A008BF749 /* CardView.swift */; };
 		4761CCF620BA5ABF00353E0A /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761CCF520BA5ABF00353E0A /* PrefixHeader.swift */; };
 		4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761CCF820BA828100353E0A /* ProjectCategoryOrSayExtension.swift */; };
 		47869AE820BED7BB002668BF /* SPClassFeaturesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47869AE620BED7BB002668BF /* SPClassFeaturesVC.swift */; };
@@ -638,6 +650,18 @@
 		471E1E62205BCF5A000536BB /* qrcode_button_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_button_background@2x.png"; sourceTree = "<group>"; };
 		471E1E63205BCF5A000536BB /* qrcode_scanline_barcode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scanline_barcode@3x.png"; sourceTree = "<group>"; };
 		471E1E64205BCF5A000536BB /* qrcode_tabbar_icon_qrcode_highlighted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_tabbar_icon_qrcode_highlighted@3x.png"; sourceTree = "<group>"; };
+		474016E120E12F0B008BF749 /* YFViewTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFViewTransitionViewController.swift; sourceTree = "<group>"; };
+		474016E620E13129008BF749 /* photo_sample_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_sample_02.png; sourceTree = "<group>"; };
+		474016E720E13129008BF749 /* photo_sample_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_sample_03.png; sourceTree = "<group>"; };
+		474016E820E13129008BF749 /* photo_sample_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_sample_01.png; sourceTree = "<group>"; };
+		474016E920E13129008BF749 /* photo_sample_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_sample_04.png; sourceTree = "<group>"; };
+		474016EA20E13129008BF749 /* photo_sample_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_sample_05.png; sourceTree = "<group>"; };
+		474016EB20E13129008BF749 /* photo_sample_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_sample_07.png; sourceTree = "<group>"; };
+		474016EC20E13129008BF749 /* photo_sample_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_sample_06.png; sourceTree = "<group>"; };
+		474016F720E131F4008BF749 /* YFDraggableCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFDraggableCardViewController.swift; sourceTree = "<group>"; };
+		474016F920E131F4008BF749 /* YSLDraggableCardContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSLDraggableCardContainer.swift; sourceTree = "<group>"; };
+		474016FC20E13226008BF749 /* YSLCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSLCardView.swift; sourceTree = "<group>"; };
+		474016FE20E1323A008BF749 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4761CCF520BA5ABF00353E0A /* PrefixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
 		4761CCF820BA828100353E0A /* ProjectCategoryOrSayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCategoryOrSayExtension.swift; sourceTree = "<group>"; };
 		47869AE620BED7BB002668BF /* SPClassFeaturesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClassFeaturesVC.swift; sourceTree = "<group>"; };
@@ -1184,6 +1208,7 @@
 		471E1F68205BD214000536BB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				474016DF20E12ECF008BF749 /* 视图切换 */,
 				8F66F8DA20D8B1C800D0FB0F /* 视图布局 */,
 				471E1F69205BD214000536BB /* 其他小功能 */,
 			);
@@ -1205,6 +1230,57 @@
 				47B49A49206939ED000A36C3 /* 分页控制器 */,
 			);
 			path = "其他小功能";
+			sourceTree = "<group>";
+		};
+		474016DF20E12ECF008BF749 /* 视图切换 */ = {
+			isa = PBXGroup;
+			children = (
+				474016E120E12F0B008BF749 /* YFViewTransitionViewController.swift */,
+				474016E020E12ECF008BF749 /* 卡牌拖动翻页 */,
+			);
+			path = "视图切换";
+			sourceTree = "<group>";
+		};
+		474016E020E12ECF008BF749 /* 卡牌拖动翻页 */ = {
+			isa = PBXGroup;
+			children = (
+				474016F620E131F4008BF749 /* C */,
+				474016F820E131F4008BF749 /* V */,
+				474016E520E13129008BF749 /* Resources */,
+			);
+			path = "卡牌拖动翻页";
+			sourceTree = "<group>";
+		};
+		474016E520E13129008BF749 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				474016E620E13129008BF749 /* photo_sample_02.png */,
+				474016E720E13129008BF749 /* photo_sample_03.png */,
+				474016E820E13129008BF749 /* photo_sample_01.png */,
+				474016E920E13129008BF749 /* photo_sample_04.png */,
+				474016EA20E13129008BF749 /* photo_sample_05.png */,
+				474016EB20E13129008BF749 /* photo_sample_07.png */,
+				474016EC20E13129008BF749 /* photo_sample_06.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		474016F620E131F4008BF749 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				474016F720E131F4008BF749 /* YFDraggableCardViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		474016F820E131F4008BF749 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				474016F920E131F4008BF749 /* YSLDraggableCardContainer.swift */,
+				474016FC20E13226008BF749 /* YSLCardView.swift */,
+				474016FE20E1323A008BF749 /* CardView.swift */,
+			);
+			path = V;
 			sourceTree = "<group>";
 		};
 		4761CCF720BA823700353E0A /* CategoryOrSayExtension */ = {
@@ -1783,9 +1859,11 @@
 				471E1EA5205BCF5A000536BB /* phone@2x.png in Resources */,
 				471E1F35205BCF5B000536BB /* charity@2x.png in Resources */,
 				471E1EFD205BCF5A000536BB /* 20000215_contactB@2x.png in Resources */,
+				474016EF20E13129008BF749 /* photo_sample_01.png in Resources */,
 				471E1F37205BCF5B000536BB /* fixed@2x.png in Resources */,
 				471E1EED205BCF5A000536BB /* 20000107@2x.png in Resources */,
 				471E1F32205BCF5B000536BB /* balance@2x.png in Resources */,
+				474016F020E13129008BF749 /* photo_sample_04.png in Resources */,
 				471E1F12205BCF5B000536BB /* 20000161@2x.png in Resources */,
 				471E1EB7205BCF5A000536BB /* o2o_location@2x.png in Resources */,
 				471E1EC0205BCF5A000536BB /* dot@2x.png in Resources */,
@@ -1806,7 +1884,9 @@
 				471E1EB1205BCF5A000536BB /* map-annotation@2x.png in Resources */,
 				471E1EAB205BCF5A000536BB /* o2o_yellow_star@3x.png in Resources */,
 				471E1F1B205BCF5B000536BB /* 20000153@2x.png in Resources */,
+				474016EE20E13129008BF749 /* photo_sample_03.png in Resources */,
 				471E1F63205BCF5B000536BB /* qrcode_button_background@2x.png in Resources */,
+				474016F220E13129008BF749 /* photo_sample_07.png in Resources */,
 				471E1E91205BCF5A000536BB /* comment_list_arrow@2x.png in Resources */,
 				471E1EB5205BCF5A000536BB /* deleteTag@2x.png in Resources */,
 				471E1F1D205BCF5B000536BB /* tableHeaderIcon_nearby@2x.png in Resources */,
@@ -1839,6 +1919,7 @@
 				8F02842020BBF03200CCFF65 /* SPBridgeVc.xib in Resources */,
 				471E1EE6205BCF5A000536BB /* 88886666_contactA@2x.png in Resources */,
 				471E1E93205BCF5A000536BB /* placeholder_white@2x.png in Resources */,
+				474016ED20E13129008BF749 /* photo_sample_02.png in Resources */,
 				471E1EBB205BCF5A000536BB /* merchant@2x.png in Resources */,
 				471E1ED4205BCF5A000536BB /* add_comment_image.png in Resources */,
 				471E1ECE205BCF5A000536BB /* wanfaArrow@3x.png in Resources */,
@@ -1898,6 +1979,7 @@
 				471E1F4D205BCF5B000536BB /* qrcode_border@2x.png in Resources */,
 				471E1F58205BCF5B000536BB /* ewm@2x.png in Resources */,
 				471E1ECA205BCF5A000536BB /* O2O-PARKING@3x.png in Resources */,
+				474016F320E13129008BF749 /* photo_sample_06.png in Resources */,
 				471E1F08205BCF5B000536BB /* 20000244_contactB@2x.png in Resources */,
 				471E1F60205BCF5B000536BB /* codeframe@3x.png in Resources */,
 				471E1EEB205BCF5A000536BB /* 20000168@2x.png in Resources */,
@@ -1918,6 +2000,7 @@
 				471E1ECB205BCF5A000536BB /* merchantLoaction@3x.png in Resources */,
 				471E1EC6205BCF5A000536BB /* imageLoading-65x45@2x.png in Resources */,
 				471E1EC7205BCF5A000536BB /* O2O-PARKING@2x.png in Resources */,
+				474016F120E13129008BF749 /* photo_sample_05.png in Resources */,
 				471E1F15205BCF5B000536BB /* 20001000@2x.png in Resources */,
 				471E1EA0205BCF5A000536BB /* qiang@2x.png in Resources */,
 				471E1E98205BCF5A000536BB /* imgdefault.png in Resources */,
@@ -2066,7 +2149,9 @@
 				47B49A5B20694D22000A36C3 /* valueExtension.swift in Sources */,
 				4711080F20DF98760042A3B2 /* SPGCDTest.swift in Sources */,
 				4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */,
+				474016FD20E13226008BF749 /* YSLCardView.swift in Sources */,
 				8FA0DBEB20DE177F0044EBCE /* MJExtensionConst.m in Sources */,
+				474016FF20E1323A008BF749 /* CardView.swift in Sources */,
 				8F106BC420DE4B8F00BF936D /* MJRefreshBackFooter.m in Sources */,
 				8F106BBA20DE4B8F00BF936D /* MJRefreshBackStateFooter.m in Sources */,
 				8F106BC320DE4B8F00BF936D /* MJRefreshHeader.m in Sources */,
@@ -2104,6 +2189,7 @@
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
 				471E1D52205BC632000536BB /* ReputationViewController.swift in Sources */,
 				8F66F8DF20D8B5E400D0FB0F /* HWLineLayout.swift in Sources */,
+				474016FB20E131F4008BF749 /* YSLDraggableCardContainer.swift in Sources */,
 				8F02841820BBE8F000CCFF65 /* SPSwiftBlockVC.swift in Sources */,
 				47869AF420BF1261002668BF /* TestSizeToFitM.swift in Sources */,
 				8F77A26C20DC8BD900D0FC41 /* YFShopCell.swift in Sources */,
@@ -2122,6 +2208,7 @@
 				471E1D5A205BC6A9000536BB /* CityListViewController.swift in Sources */,
 				8F106BBB20DE4B8F00BF936D /* MJRefreshBackNormalFooter.m in Sources */,
 				47B49A5C20694D22000A36C3 /* XPageExtension.swift in Sources */,
+				474016FA20E131F4008BF749 /* YFDraggableCardViewController.swift in Sources */,
 				8F7D205D20BEA46800DECBE7 /* SPTestKingfisherVC.swift in Sources */,
 				47A73F5920DB442200F8E9AF /* SPTestOptionalValueVC.swift in Sources */,
 				8F7D204620BE74AF00DECBE7 /* GJNetWorkTool.swift in Sources */,
@@ -2131,6 +2218,7 @@
 				8F106BB820DE4B8F00BF936D /* UIView+MJExtension.m in Sources */,
 				8F66F8EA20D8F29200D0FB0F /* BaseTableViewController.swift in Sources */,
 				8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */,
+				474016E220E12F0B008BF749 /* YFViewTransitionViewController.swift in Sources */,
 				47A73F5520DB369000F8E9AF /* YFViewLayoutViewController.swift in Sources */,
 				8F106BC220DE4B8F00BF936D /* MJRefreshFooter.m in Sources */,
 			);
