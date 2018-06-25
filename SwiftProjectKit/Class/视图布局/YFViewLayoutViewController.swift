@@ -20,7 +20,7 @@ class YFViewLayoutViewController: BaseTableViewController {
 //            @[@"滑动标题",@"YFSlideTitlesViewController"],
 //            @[@"网易滑动标题",@"YFNeteaseHomeViewController"],
 //            @[@"抽卡效果",@"YFStackedPageVC_UIStoryboard"],]];
-         self.setupDataArr(dataArr: [["水平滚动布局","SPHorizontalScrollViewController"],["瀑布流布局","YFWaterflowViewController"],["浏览卡","RGCardLayoutViewController"],]);
+         self.setupDataArr(dataArr: [["水平滚动布局","SPHorizontalScrollViewController"],["瀑布流布局","YFWaterflowViewController"],["浏览卡","RGCardLayoutViewController"],["滑动标题","YFNeteaseHomeViewController"]]);
     }
 
 

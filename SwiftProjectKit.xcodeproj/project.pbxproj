@@ -327,6 +327,9 @@
 		8F106BC520DE4B8F00BF936D /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BAC20DE4B8F00BF936D /* MJRefreshAutoFooter.m */; };
 		8F106BC620DE4B8F00BF936D /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BAE20DE4B8F00BF936D /* MJRefreshComponent.m */; };
 		8F106BC720DE4B8F00BF936D /* UIScrollView+FXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BB120DE4B8F00BF936D /* UIScrollView+FXRefresh.m */; };
+		8F106BCB20E0AAD600BF936D /* YFNeteaseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BCA20E0AAD600BF936D /* YFNeteaseHomeViewController.swift */; };
+		8F106BCD20E0AB1000BF936D /* YFHomeLabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BCC20E0AB1000BF936D /* YFHomeLabelButton.swift */; };
+		8F106BCF20E0BECC00BF936D /* YFHealineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BCE20E0BECC00BF936D /* YFHealineViewController.swift */; };
 		8F66F8DD20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8DC20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift */; };
 		8F66F8DF20D8B5E400D0FB0F /* HWLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8DE20D8B5E400D0FB0F /* HWLineLayout.swift */; };
 		8F66F8E720D8C21700D0FB0F /* HWCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */; };
@@ -714,6 +717,9 @@
 		8F106BB020DE4B8F00BF936D /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
 		8F106BB120DE4B8F00BF936D /* UIScrollView+FXRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FXRefresh.m"; sourceTree = "<group>"; };
 		8F106BB220DE4B8F00BF936D /* UIScrollView+FXRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FXRefresh.h"; sourceTree = "<group>"; };
+		8F106BCA20E0AAD600BF936D /* YFNeteaseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFNeteaseHomeViewController.swift; sourceTree = "<group>"; };
+		8F106BCC20E0AB1000BF936D /* YFHomeLabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFHomeLabelButton.swift; sourceTree = "<group>"; };
+		8F106BCE20E0BECC00BF936D /* YFHealineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFHealineViewController.swift; sourceTree = "<group>"; };
 		8F66F8DC20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHorizontalScrollViewController.swift; sourceTree = "<group>"; };
 		8F66F8DE20D8B5E400D0FB0F /* HWLineLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWLineLayout.swift; sourceTree = "<group>"; };
 		8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -1479,9 +1485,20 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		8F106BC920E0AAAC00BF936D /* 网易滑动标题 */ = {
+			isa = PBXGroup;
+			children = (
+				8F106BCA20E0AAD600BF936D /* YFNeteaseHomeViewController.swift */,
+				8F106BCC20E0AB1000BF936D /* YFHomeLabelButton.swift */,
+				8F106BCE20E0BECC00BF936D /* YFHealineViewController.swift */,
+			);
+			path = "网易滑动标题";
+			sourceTree = "<group>";
+		};
 		8F66F8DA20D8B1C800D0FB0F /* 视图布局 */ = {
 			isa = PBXGroup;
 			children = (
+				8F106BC920E0AAAC00BF936D /* 网易滑动标题 */,
 				8F77A25A20DC898300D0FC41 /* 瀑布流布局 */,
 				8F66F8DB20D8B21500D0FB0F /* 水平滚动布局 */,
 				47A73F5420DB369000F8E9AF /* YFViewLayoutViewController.swift */,
@@ -2032,11 +2049,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F106BCF20E0BECC00BF936D /* YFHealineViewController.swift in Sources */,
 				8FA0DBE920DE177F0044EBCE /* MJProperty.m in Sources */,
 				8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */,
 				47906083205983C0000E74A5 /* ViewController.swift in Sources */,
 				8F106BC720DE4B8F00BF936D /* UIScrollView+FXRefresh.m in Sources */,
 				8FA0DBF120DE177F0044EBCE /* MJFoundation.m in Sources */,
+				8F106BCD20E0AB1000BF936D /* YFHomeLabelButton.swift in Sources */,
 				8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */,
 				8F66F8E720D8C21700D0FB0F /* HWCollectionViewCell.swift in Sources */,
 				47869AE820BED7BB002668BF /* SPClassFeaturesVC.swift in Sources */,
@@ -2080,6 +2099,7 @@
 				471E1D4C205BC4C9000536BB /* WMTabbarController.swift in Sources */,
 				8FA0DBED20DE177F0044EBCE /* NSObject+MJClass.m in Sources */,
 				47B49A60206950A2000A36C3 /* XPageBarExtension.swift in Sources */,
+				8F106BCB20E0AAD600BF936D /* YFNeteaseHomeViewController.swift in Sources */,
 				8FA0DBE720DE177F0044EBCE /* MJPropertyType.m in Sources */,
 				471E1D50205BC61A000536BB /* AlipayViewController.swift in Sources */,
 				471E1D52205BC632000536BB /* ReputationViewController.swift in Sources */,
