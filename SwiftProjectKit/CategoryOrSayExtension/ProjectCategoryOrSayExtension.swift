@@ -13,7 +13,7 @@ import UIKit
 extension UIColor {
     //颜色16进制
     
-    //MARK:16进制颜色  "#00FF07"
+    //MARK:1>16进制颜色  "#00FF07"
     public class func hexCOLOR(_ hexString: String) -> UIColor{
 
         var cString: String = hexString.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
@@ -52,8 +52,19 @@ extension UIColor {
         return UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: CGFloat(1))
         //下面这个方法ios10以上才有
 //        return UIColor(displayP3Red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: CGFloat(1))
-
     }
+    //MARK:2>返回随机颜色
+    //pss_吐槽，方法分类方法，实例方法，没想到swift中属性也分类属性
+    open class var randomColor:UIColor{
+        get
+        {
+            let red = CGFloat(arc4random()%256)/255.0
+            let green = CGFloat(arc4random()%256)/255.0
+            let blue = CGFloat(arc4random()%256)/255.0
+            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        }
+    }
+    
 
 }
 

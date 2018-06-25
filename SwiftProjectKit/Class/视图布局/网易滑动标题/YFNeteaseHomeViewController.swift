@@ -55,7 +55,7 @@ extension YFNeteaseHomeViewController {
         
         // 不要刻意去调整scrollView的contentInset
         self.automaticallyAdjustsScrollViewInsets = false
-        var labelButtonW = CGFloat(90.0)
+        let labelButtonW = CGFloat(90.0)
         let count = self.childViewControllers.count
         for i in 0..<count{
             // 取出i位置对应的子控制器
@@ -90,7 +90,14 @@ extension YFNeteaseHomeViewController {
         for i in 0..<titleList.count{
             let vc = YFHealineViewController()
             vc.title = titleList[i]
+            vc.view.backgroundColor = UIColor.randomColor
             self.addChildViewController(vc)
+            
+            vc.view.frame.origin.y = 0
+            vc.view.frame.size.width = self.contentsScrollView.frame.size.width
+            vc.view.frame.size.height = self.contentsScrollView.frame.size.height;
+            vc.view.frame.origin.x = CGFloat(i) * vc.view.frame.size.width
+            self.contentsScrollView.addSubview((vc.view)!)
         }
     }
 }
@@ -103,7 +110,8 @@ extension YFNeteaseHomeViewController{
     @objc func labelClick(labelButton : YFHomeLabelButton){
         
         // 切换按钮状态
-        self.selectedButton.isSelected = false
+        //pss_疑，貌似不能直接像oc调用set方法监听其属性的变化，虽然自定义的可以监听willSet,但是系统的呢？待研究
+        self.selectedButton?.isSelected = false
         labelButton.isSelected = true
         self.selectedButton = labelButton
         

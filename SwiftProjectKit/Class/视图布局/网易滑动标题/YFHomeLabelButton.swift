@@ -20,20 +20,25 @@ class YFHomeLabelButton: UIButton {
      */
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setTitleColor(kRedColor, for: .normal)
+        self.setTitleColor(kBlackColor, for: .normal)
+        self.setTitleColor(kRedColor, for: .selected)
         self.titleLabel?.font = kFont(15)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    //pss_赞，以重写父类方法的信息，监听按钮的点击事件
-    override func select(_ sender: Any?) {
-        super.select(sender)
-        if (isSelected) {
-         self.setTitleColor(kYellowColor, for: .selected)
-        } else {
-            self.setTitleColor(kBlackColor, for: .selected)
+    //pss_即使是父类的一样可以监听
+    override var isSelected: Bool{
+        //pss_如果要利于变化之后的属性值一定要用didSet,不要用willSet,willSet是值还没有变的
+        didSet{
+            if (isSelected) {
+                self.setTitleColor(kRedColor, for: .selected)
+                print("选中")
+            } else {
+                self.setTitleColor(kBlackColor, for: .selected)
+                print("没选中")
+            }
         }
     }
     
@@ -44,7 +49,7 @@ class YFHomeLabelButton: UIButton {
         self.titleLabel?.font = kFont(size)
         
         // 调整颜色
-        self.setTitleColor(kYellowColor, for: .selected)
+        self.setTitleColor(kRedColor, for: .selected)
         self.setTitleColor(kBlackColor, for: .normal)
     }
 }
