@@ -342,6 +342,8 @@
 		8F106BCB20E0AAD600BF936D /* YFNeteaseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BCA20E0AAD600BF936D /* YFNeteaseHomeViewController.swift */; };
 		8F106BCD20E0AB1000BF936D /* YFHomeLabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BCC20E0AB1000BF936D /* YFHomeLabelButton.swift */; };
 		8F106BCF20E0BECC00BF936D /* YFHealineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F106BCE20E0BECC00BF936D /* YFHealineViewController.swift */; };
+		8F53A71B20E7793F0096D401 /* YFScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F53A71A20E7793F0096D401 /* YFScrollViewController.swift */; };
+		8F53A71E20E785DE0096D401 /* YFBlurtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F53A71D20E785DE0096D401 /* YFBlurtViewController.swift */; };
 		8F66F8DD20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8DC20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift */; };
 		8F66F8DF20D8B5E400D0FB0F /* HWLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8DE20D8B5E400D0FB0F /* HWLineLayout.swift */; };
 		8F66F8E720D8C21700D0FB0F /* HWCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */; };
@@ -744,6 +746,8 @@
 		8F106BCA20E0AAD600BF936D /* YFNeteaseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFNeteaseHomeViewController.swift; sourceTree = "<group>"; };
 		8F106BCC20E0AB1000BF936D /* YFHomeLabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFHomeLabelButton.swift; sourceTree = "<group>"; };
 		8F106BCE20E0BECC00BF936D /* YFHealineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFHealineViewController.swift; sourceTree = "<group>"; };
+		8F53A71A20E7793F0096D401 /* YFScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFScrollViewController.swift; sourceTree = "<group>"; };
+		8F53A71D20E785DE0096D401 /* YFBlurtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFBlurtViewController.swift; sourceTree = "<group>"; };
 		8F66F8DC20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHorizontalScrollViewController.swift; sourceTree = "<group>"; };
 		8F66F8DE20D8B5E400D0FB0F /* HWLineLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWLineLayout.swift; sourceTree = "<group>"; };
 		8F66F8E520D8C21700D0FB0F /* HWCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -1208,6 +1212,7 @@
 		471E1F68205BD214000536BB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				8F53A71820E778DA0096D401 /* UIKit */,
 				474016DF20E12ECF008BF749 /* 视图切换 */,
 				8F66F8DA20D8B1C800D0FB0F /* 视图布局 */,
 				471E1F69205BD214000536BB /* 其他小功能 */,
@@ -1569,6 +1574,31 @@
 				8F106BCE20E0BECC00BF936D /* YFHealineViewController.swift */,
 			);
 			path = "网易滑动标题";
+			sourceTree = "<group>";
+		};
+		8F53A71820E778DA0096D401 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8F53A71920E778DA0096D401 /* UIScrollView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8F53A71920E778DA0096D401 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				8F53A71C20E785940096D401 /* 放大头部视图 */,
+				8F53A71A20E7793F0096D401 /* YFScrollViewController.swift */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		8F53A71C20E785940096D401 /* 放大头部视图 */ = {
+			isa = PBXGroup;
+			children = (
+				8F53A71D20E785DE0096D401 /* YFBlurtViewController.swift */,
+			);
+			path = "放大头部视图";
 			sourceTree = "<group>";
 		};
 		8F66F8DA20D8B1C800D0FB0F /* 视图布局 */ = {
@@ -2150,6 +2180,7 @@
 				4711080F20DF98760042A3B2 /* SPGCDTest.swift in Sources */,
 				4761CCF920BA828100353E0A /* ProjectCategoryOrSayExtension.swift in Sources */,
 				474016FD20E13226008BF749 /* YSLCardView.swift in Sources */,
+				8F53A71B20E7793F0096D401 /* YFScrollViewController.swift in Sources */,
 				8FA0DBEB20DE177F0044EBCE /* MJExtensionConst.m in Sources */,
 				474016FF20E1323A008BF749 /* CardView.swift in Sources */,
 				8F106BC420DE4B8F00BF936D /* MJRefreshBackFooter.m in Sources */,
@@ -2219,6 +2250,7 @@
 				8F66F8EA20D8F29200D0FB0F /* BaseTableViewController.swift in Sources */,
 				8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */,
 				474016E220E12F0B008BF749 /* YFViewTransitionViewController.swift in Sources */,
+				8F53A71E20E785DE0096D401 /* YFBlurtViewController.swift in Sources */,
 				47A73F5520DB369000F8E9AF /* YFViewLayoutViewController.swift in Sources */,
 				8F106BC220DE4B8F00BF936D /* MJRefreshFooter.m in Sources */,
 			);

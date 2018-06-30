@@ -13,6 +13,6 @@ class YFViewTransitionViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-         self.setupDataArr(dataArr: [["卡牌拖动翻页","YFDraggableCardViewController"],]);
+         self.setupDataArr(dataArr: [["卡牌拖动翻页","YFDraggableCardViewController"],/*["折卡效果","YFFlipPageViewController"],*/]);
     }
 }
