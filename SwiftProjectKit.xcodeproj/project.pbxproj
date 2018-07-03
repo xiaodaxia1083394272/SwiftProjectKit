@@ -318,6 +318,8 @@
 		8F02842020BBF03200CCFF65 /* SPBridgeVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841E20BBF03200CCFF65 /* SPBridgeVc.xib */; };
 		8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F02842320BC04ED00CCFF65 /* SPTestBriage.m */; };
 		8F02842620BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */; };
+		8F0D3D0B20EB0F2900A1C808 /* YFUIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D3D0A20EB0F2900A1C808 /* YFUIKitViewController.swift */; };
+		8F0D3D1220EB111F00A1C808 /* YFBlurtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D3D1120EB111F00A1C808 /* YFBlurtView.swift */; };
 		8F106BB320DE4B8F00BF936D /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F106B8320DE4B8F00BF936D /* UIScrollView+MJRefresh.m */; };
 		8F106BB420DE4B8F00BF936D /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F106B8420DE4B8F00BF936D /* MJRefreshConst.m */; };
 		8F106BB520DE4B8F00BF936D /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8F106B8820DE4B8F00BF936D /* MJRefresh.bundle */; };
@@ -701,6 +703,8 @@
 		8F02842220BC04ED00CCFF65 /* SPTestBriage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTestBriage.h; sourceTree = "<group>"; };
 		8F02842320BC04ED00CCFF65 /* SPTestBriage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTestBriage.m; sourceTree = "<group>"; };
 		8F02842520BC0F8200CCFF65 /* SPSwiftTestBriageObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSwiftTestBriageObj.swift; sourceTree = "<group>"; };
+		8F0D3D0A20EB0F2900A1C808 /* YFUIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFUIKitViewController.swift; sourceTree = "<group>"; };
+		8F0D3D1120EB111F00A1C808 /* YFBlurtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFBlurtView.swift; sourceTree = "<group>"; };
 		8F106B8320DE4B8F00BF936D /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		8F106B8420DE4B8F00BF936D /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
 		8F106B8520DE4B8F00BF936D /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
@@ -1580,6 +1584,7 @@
 			isa = PBXGroup;
 			children = (
 				8F53A71920E778DA0096D401 /* UIScrollView */,
+				8F0D3D0A20EB0F2900A1C808 /* YFUIKitViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1597,6 +1602,7 @@
 			isa = PBXGroup;
 			children = (
 				8F53A71D20E785DE0096D401 /* YFBlurtViewController.swift */,
+				8F0D3D1120EB111F00A1C808 /* YFBlurtView.swift */,
 			);
 			path = "放大头部视图";
 			sourceTree = "<group>";
@@ -2164,6 +2170,7 @@
 			files = (
 				8F106BCF20E0BECC00BF936D /* YFHealineViewController.swift in Sources */,
 				8FA0DBE920DE177F0044EBCE /* MJProperty.m in Sources */,
+				8F0D3D1220EB111F00A1C808 /* YFBlurtView.swift in Sources */,
 				8F02842420BC04ED00CCFF65 /* SPTestBriage.m in Sources */,
 				47906083205983C0000E74A5 /* ViewController.swift in Sources */,
 				8F106BC720DE4B8F00BF936D /* UIScrollView+FXRefresh.m in Sources */,
@@ -2248,6 +2255,7 @@
 				8F106BC020DE4B8F00BF936D /* MJRefreshStateHeader.m in Sources */,
 				8F106BB820DE4B8F00BF936D /* UIView+MJExtension.m in Sources */,
 				8F66F8EA20D8F29200D0FB0F /* BaseTableViewController.swift in Sources */,
+				8F0D3D0B20EB0F2900A1C808 /* YFUIKitViewController.swift in Sources */,
 				8F7D205420BE7E0200DECBE7 /* SPTestAla.swift in Sources */,
 				474016E220E12F0B008BF749 /* YFViewTransitionViewController.swift in Sources */,
 				8F53A71E20E785DE0096D401 /* YFBlurtViewController.swift in Sources */,

@@ -17,6 +17,12 @@ class YFBlurtViewController: UIViewController {
      */
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = kWhiteColor
+//        let b : YFBlurtView = [[YFBlurtView alloc] initWithFrame:self.view.frame WithHeaderImgHeight:170 iconHeight:100 selectBlock:^(NSIndexPath *indexPath) {
+//            NSLog(@"indexpath.row is %zi indexpath.section is %zi",indexPath.row,indexPath.section);
+//            }];
+//        [self.view addSubview:b];
 
     }
 }

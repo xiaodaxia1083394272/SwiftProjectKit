@@ -13,7 +13,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 //snn_吐槽，pss_重，原理，赞,核,参考，疑
     var window: UIWindow?
-
+ /*
+     1.pss_参考(菜鸟教程）：http://www.runoob.com/swift/swift-closures.html
+     
+     */
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 

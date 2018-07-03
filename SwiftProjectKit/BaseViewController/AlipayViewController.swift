@@ -24,7 +24,8 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "tableViewCell高度自适应":"TestCellHeightSizeToFit",
             "视图布局":"YFViewLayoutViewController",
             "可选值":"SPTestOptionalValueVC",
-            "视图切换":"YFViewTransitionViewController",/*
+            "视图切换":"YFViewTransitionViewController",
+            "UIKit":"YFUIKitViewController",/*
             "倒计时":"PKTimeVC",
             "删除功能的图片浏览器":"",
             "友盟登录分享":"PKUMVC",
@@ -38,7 +39,6 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "零散知识点":"YFKnowledgeViewController",
             "小项目展示":"YFLittleProjectViewController",
             "动画集合":"YFAnimationsViewController",
-            "UIKit":"YFUIKitViewController",
             "仿主流app功能":"YFImitateAppViewController",
             "常用工具类":"YFToolsViewController",
             "数据持久化":"YFDataPersistenceViewController",
