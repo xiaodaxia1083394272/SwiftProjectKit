@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-//snn_吐槽，pss_重，原理，赞,核,参考，疑
+//snn_吐槽，pss_重，原理，赞,核,参考，疑,todo
     var window: UIWindow?
  /*
      1.pss_参考(菜鸟教程）：http://www.runoob.com/swift/swift-closures.html
