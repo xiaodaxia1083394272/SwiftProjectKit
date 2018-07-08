@@ -12,6 +12,6 @@ class YFScrollViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupDataArr(dataArr:[["放大头部视图","YFBlurtViewController"],])
+        self.setupDataArr(dataArr:[["放大头部视图","YFBlurtViewController"],])//pss_屏蔽
     }
 }
