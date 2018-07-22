@@ -320,6 +320,7 @@
 		47E8ABF82104E95400B634FF /* SP020VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8ABF72104E95400B634FF /* SP020VC.swift */; };
 		47E8ABFC2104E9EA00B634FF /* SPAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8ABFA2104E9EA00B634FF /* SPAlertVC.swift */; };
 		47E8ABFD2104E9EA00B634FF /* SPAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47E8ABFB2104E9EA00B634FF /* SPAlertVC.xib */; };
+		47E8ABFF2104ED4500B634FF /* XYAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8ABFE2104ED4500B634FF /* XYAlertView.swift */; };
 		62061E6550D1E599D0782120 /* Pods_SwiftProjectKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E857D8966CAF8B2E3D0C3DB6 /* Pods_SwiftProjectKit.framework */; };
 		8F02841120BBAC1600CCFF65 /* SPDelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F02840F20BBAC1600CCFF65 /* SPDelegateVC.swift */; };
 		8F02841220BBAC1600CCFF65 /* SPDelegateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02841020BBAC1600CCFF65 /* SPDelegateVC.xib */; };
@@ -745,6 +746,7 @@
 		47E8ABF72104E95400B634FF /* SP020VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SP020VC.swift; sourceTree = "<group>"; };
 		47E8ABFA2104E9EA00B634FF /* SPAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAlertVC.swift; sourceTree = "<group>"; };
 		47E8ABFB2104E9EA00B634FF /* SPAlertVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPAlertVC.xib; sourceTree = "<group>"; };
+		47E8ABFE2104ED4500B634FF /* XYAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYAlertView.swift; sourceTree = "<group>"; };
 		5119E942B23ADF876BB00852 /* Pods-SwiftProjectKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjectKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProjectKit/Pods-SwiftProjectKit.release.xcconfig"; sourceTree = "<group>"; };
 		6CBB4FCAD45E9471C7FD92B5 /* Pods-SwiftProjectKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjectKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProjectKit/Pods-SwiftProjectKit.debug.xcconfig"; sourceTree = "<group>"; };
 		8F02840F20BBAC1600CCFF65 /* SPDelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDelegateVC.swift; sourceTree = "<group>"; };
@@ -1543,6 +1545,7 @@
 			children = (
 				47E8ABFA2104E9EA00B634FF /* SPAlertVC.swift */,
 				47E8ABFB2104E9EA00B634FF /* SPAlertVC.xib */,
+				47E8ABFE2104ED4500B634FF /* XYAlertView.swift */,
 			);
 			path = "弹窗";
 			sourceTree = "<group>";
@@ -2383,6 +2386,7 @@
 				8F77A26C20DC8BD900D0FC41 /* YFShopCell.swift in Sources */,
 				8F02841420BBDCC500CCFF65 /* SPTestDelegateObject.swift in Sources */,
 				8F7D203F20BE4FF100DECBE7 /* HttpTool.swift in Sources */,
+				47E8ABFF2104ED4500B634FF /* XYAlertView.swift in Sources */,
 				8F7D204920BE764C00DECBE7 /* NetWorkFile.swift in Sources */,
 				8F106BB920DE4B8F00BF936D /* MJRefreshBackGifFooter.m in Sources */,
 				8F66F8DD20D8B28100D0FB0F /* SPHorizontalScrollViewController.swift in Sources */,

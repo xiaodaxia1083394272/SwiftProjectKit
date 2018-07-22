@@ -17,7 +17,7 @@ class SPAlertVC: UIViewController {
     
     @IBAction func clickBtn(_ sender: Any) {
         
-       test1()
+       test2()
     }
     
     func test1(){
@@ -32,6 +32,10 @@ class SPAlertVC: UIViewController {
         alertController.addAction(cancelAction)
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func test2(){
+       XYAlertView.ShareAlert.show()
     }
     
 }
