@@ -13,11 +13,11 @@ class SPTestSwiftBlcokObjcet: NSObject {
     
     // 1.定义一个闭包类型
     //格式: typealias 闭包名称 = (参数名称: 参数类型) -> 返回值类型
-    typealias swiftBlock = (_ str: String) -> Void
+    typealias swiftBlock = (_ str: String,_ two:String) -> Void
     //2. 声明一个变量
     var callBack: swiftBlock?
     //3. 定义一个方法,方法的参数为和swiftBlock类型一致的闭包,并赋值给callBack
-    func callBackBlock(block: @escaping (_ str: String) -> Void) {
+    func callBackBlock(block: @escaping (_ str: String,_ two:String) -> Void) {
         
         callBack = block
         buttonClick()
@@ -26,7 +26,7 @@ class SPTestSwiftBlcokObjcet: NSObject {
     func buttonClick() {
         if self.callBack != nil
         {
-            callBack!("这里的闭包传递了一个字符串")
+            callBack!("这里的闭包传递了一个字符串","第二个参数")
         }
     }
 

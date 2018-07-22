@@ -52,10 +52,9 @@ class SPSwiftBlockVC: UIViewController {
 //        })
         //2.这种是拆开来的写法，比较灵活，比较常用
         let a = SPTestSwiftBlcokObjcet()
-        a.callBackBlock { (str) in
-           weakSelf?.testLB.text = str
+        a.callBackBlock { (str,two) in
+            weakSelf?.testLB.text = str
         }
-        
     }
     
     override func viewDidLoad() {
@@ -63,7 +62,7 @@ class SPSwiftBlockVC: UIViewController {
         //实例对象
         testSwiftBlcokObjcet = SPTestSwiftBlcokObjcet()
         //测试
-        test1()
+        test9()
     }
  
 }
@@ -266,6 +265,73 @@ extension SPSwiftBlockVC{
         let alsoIncrementByTen = incrementByTen
         // 返回的值也为40
         print(alsoIncrementByTen())
+    }
+    
+    func test7(){
+        //MARK:闭包 之 Sort函数（排序）
+        // Sort函数
+        /*
+         在OC中对一个数组排序，以及字典的排序往往都是自己写一个函数去实现。swift中就不用再自己再去做这样的事了。Swift提供了sort函数，可以让数组和字典很方便的实现排序。
+         */
+        var a = ["2","1","3"]
+
+        a.sort { (s1, s2) -> Bool in
+            return s1 > s2
+        }
+        print(a)//打印结果：["3", "2", "1"]
+    }
+    
+    func test8(){
+        //MARK:闭包 之 map函数
+        /*
+         1. Swift 的 Array 类型有一个 map 方法，其获取一个闭包表达式作为其唯一参数。数组中的每一个元素调用一次该闭包函数，并返回该元素所映射的值(也可以是不同类型的值)。
+         */
+        
+        let digitNames = [
+            0: "Zero", 1: "One", 2: "Two",   3: "Three", 4: "Four",
+            5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"
+        ]
+        let numbers = [16, 58, 510]
+        
+        // 将numbers的数字转换成英文字符串数组
+        let strings = numbers.map {
+            number -> String in
+            var number = number//将常量转成变量，因为我们要在下面做循环递除。这两个number是不同的，按Option左键点击可看到，它们一个是var，一个let的，编译器会作区分
+            var output = ""
+            repeat {
+                output = digitNames[number % 10]! + output
+                number /= 10
+            } while number > 0
+            return output
+        }
+        // strings 常量被推断为字符串类型数组，即 [String]
+        // 其值为 ["OneSix", "FiveEight", "FiveOneZero"]
+        
+       let two = numbers.map({
+            $0 + 10
+        })
+        print(two)
+    }
+    
+    func test9(){
+        //MARK:$0,$1
+        /*
+         swift自动为闭包提供参数名缩写功能，可以直接通过$0和$1等来表示闭包中的第一个第二个参数，并且对应的参数类型会根据函数类型来进行判断。如下代码：
+         
+         不使用$0 $1这些来代替
+         */
+        let numbers = [1,2,5,4,3,6,8,7]
+        let sortNumbers = numbers.sorted(by: { (a, b) -> Bool in
+            return a < b
+        })
+        print("numbers -" + "\(sortNumbers)")
+//        使用$0,$1
+        let numbers2 = [1,2,5,4,3,6,8,7]
+        let sortNumbers2 = numbers2.sorted(by: {$0 < $1})
+        print("numbers2 -" + "\(sortNumbers2)")
+        /*
+         可以发现使用$0、$1的话，参数类型可以自动判断，并且in关键字也可以省略，也就是只用写函数体就可以了
+         */
     }
     
 }

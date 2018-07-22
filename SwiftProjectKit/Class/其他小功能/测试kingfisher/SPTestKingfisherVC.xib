@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gYA-rw-viJ">
-                    <rect key="frame" x="64.5" y="37" width="246" height="158"/>
+                    <rect key="frame" x="64.5" y="96" width="246" height="158"/>
                     <color key="backgroundColor" red="0.80980133580000002" green="1" blue="0.64718455220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="158" id="BST-Q5-FMc"/>
@@ -30,7 +30,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-yl-bec">
-                    <rect key="frame" x="156.5" y="260" width="62" height="30"/>
+                    <rect key="frame" x="156.5" y="313" width="62" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="0ex-Jk-z0M"/>
                     </constraints>
@@ -44,8 +44,8 @@
             <constraints>
                 <constraint firstItem="gYA-rw-viJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hxW-KD-HVX"/>
                 <constraint firstItem="Ujd-yl-bec" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l7H-QM-3bs"/>
-                <constraint firstItem="Ujd-yl-bec" firstAttribute="top" secondItem="gYA-rw-viJ" secondAttribute="bottom" constant="65" id="odT-fd-q8o"/>
-                <constraint firstItem="gYA-rw-viJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="rx4-Gg-YrE"/>
+                <constraint firstItem="Ujd-yl-bec" firstAttribute="top" secondItem="gYA-rw-viJ" secondAttribute="bottom" constant="59" id="odT-fd-q8o"/>
+                <constraint firstItem="gYA-rw-viJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="76" id="rx4-Gg-YrE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="24.5" y="51.5"/>
