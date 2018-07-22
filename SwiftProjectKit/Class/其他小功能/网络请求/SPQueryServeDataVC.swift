@@ -50,12 +50,45 @@ class SPQueryServeDataVC: UIViewController {
         
 //        SPTestAla.queryData()
         
-        SPTestAla.queryPostData()
 
-
+          test1()
 
     }
-    
-    
-    
 }
+
+extension SPQueryServeDataVC{
+    func test0(){
+        
+      SPTestAla.queryPostData()
+
+    }
+    func test1(){
+        /*
+        NetworkManager.request(.get, with: .activityDetailForAward, query: self.model.listParameters(isMore), handle: { (result) in
+            
+            self.model.update(with: result)
+            
+            if isMore == false {
+                
+                self.hud.hideLoading()
+                self.tableView.es.stopPullToRefresh()
+                self.navigationView.setup(title: self.model.activityItem.title ?? "")
+                self.headerView.setup(with: self.model.activityItem)
+                
+            } else if self.model.hasNextPage {
+                
+                self.tableView.es.stopLoadingMore()
+                
+            } else {
+                
+                self.tableView.es.noticeNoMoreData()
+            }
+            self.tableView.reloadData()
+        })*/
+    }
+}
+
+
+
+
+

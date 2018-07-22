@@ -23,6 +23,8 @@ class AlipayViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             "swift 1.类的构造函数，2.类的属性, 3.类的属性监听器, 4.kvc赋值, 5.析构函数":"SPClassFeaturesVC",
             "tableViewCell高度自适应":"TestCellHeightSizeToFit",
             "视图布局":"YFViewLayoutViewController",
+            "枚举":"SPEnumVC",
+            "电商常用页面":"SP020VC",
             "可选值":"SPTestOptionalValueVC",/*
             "视图切换":"YFViewTransitionViewController",
             "UIKit":"YFUIKitViewController",*//*
