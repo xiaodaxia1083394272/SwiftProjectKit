@@ -18,19 +18,20 @@ class SPTestAlertVC: UIViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        animatedShow()
     }
     
 
     @IBAction func clickBtn(_ sender: Any) {
-        UIView.animate(withDuration: 5, delay: 1, options: .curveEaseInOut, animations: {
-
-        }) { (true) in
-            self.dismiss(animated: false, completion: nil)
-
-        }
+//        UIView.animate(withDuration: 5, delay: 1, options: .curveEaseInOut, animations: {
+//
+//        }) { (true) in
+//            self.dismiss(animated: false, completion: nil)
+//
+//        }
+        
+        animatedHide()
     }
     /*
     // MARK: - Navigation
@@ -41,5 +42,37 @@ class SPTestAlertVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func animatedShow() {
+        
+//        self.backgroundView.wm_updateConstraints { (make) in
+//
+//            make.top(50).equal(self.navigationView).bottom()
+//        }
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            
+            self.view.layoutIfNeeded()
+            
+        })
+    }
+    
+    func animatedHide() {
+        
+//        self.backgroundView.wm_updateConstraints { (make) in
+//
+//            make.top(UIScreen.main.bounds.height).equal(self.navigationView).bottom()
+//        }
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            
+            self.view.layoutIfNeeded()
+            
+        }, completion: { (_) in
+            
+            self.dismiss(animated: false)
+        })
+    }
+    
 
 }
