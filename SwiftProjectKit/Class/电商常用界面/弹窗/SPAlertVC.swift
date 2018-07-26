@@ -35,7 +35,11 @@ class SPAlertVC: UIViewController {
     }
     
     func test2(){
-       XYAlertView.ShareAlert.show()
+//       XYAlertView.ShareAlert.show()
+        let hudController = SPTestAlertVC();
+            hudController.modalPresentationStyle = .custom
+        self.present(hudController, animated: false)
+
     }
     
 }
